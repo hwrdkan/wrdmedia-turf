@@ -45,3 +45,14 @@ footer{border-top:1px solid var(--line)}
 /* shown when embedded in wrdmedia.com */
 .embedded header,.embedded .intro,.embedded .notes,.embedded footer{display:none}
 .embedded main{padding-top:16px}
+
+
+/* ===== UX pass ===== */
+.tv-sum,.tv-fine,.tv-privacy{font-size:13px}
+.tv-chips button,.tv-tabs button{min-height:48px}
+.tv-arrows button{width:44px;height:44px}
+.tv-go{min-height:52px}
+.tv-lead input,.tv-putt select{min-height:52px;font-size:16px}
+@media(max-width:720px){.embedded .tv-stage{position:static}.tv-tabs button{padding:6px 14px;font-size:.875rem}}
+
+.tv small,.tv-pre small{font-size:13px}
