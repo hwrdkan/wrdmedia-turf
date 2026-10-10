@@ -56,3 +56,5 @@ footer{border-top:1px solid var(--line)}
 @media(max-width:720px){.embedded .tv-stage{position:static}.tv-tabs button{padding:6px 14px;font-size:.875rem}}
 
 .tv small,.tv-pre small{font-size:13px}
+
+@media(max-width:720px){.tv-stage:has(.tv-empty){order:3}.tv-empty{min-height:180px;padding:24px}}
