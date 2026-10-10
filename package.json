@@ -1,0 +1,17 @@
+{
+  "name": "turf-visualizer-independent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs public 8788",
+    "dev:cloudflare": "wrangler pages dev public --port 8788",
+    "test": "node --test visualizer/*.test.*"
+  },
+  "devDependencies": {
+    "wrangler": "4.149.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

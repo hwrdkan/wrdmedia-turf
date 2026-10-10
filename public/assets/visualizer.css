@@ -1,0 +1,221 @@
+/* Turf Visualizer. Theme with the same variables as the planner. */
+.tv { --tv-brand: var(--tp-brand, #0f5a2a); --tv-accent: var(--tp-accent, #c7682f); --tv-line: #e3ddd0; --tv-muted: #5b655d; --tv-soft: #f1efe7;
+  display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.tv * { box-sizing: border-box; }
+.tv button, .tv input, .tv select { font: inherit; color: inherit; }
+.tv-drop:hover, .tv-drop:focus-within { border-color: var(--tv-brand); }
+.tv-file { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.tv-drop-in small { color: var(--tv-muted); }
+.tv-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.tv-chips button { min-height: 44px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--tv-line); background: #fff; cursor: pointer; }
+.tv-chips button[aria-pressed="true"] { background: var(--tv-brand); border-color: var(--tv-brand); color: #fff; }
+.tv-sw[aria-pressed="true"], .tv-pre[aria-pressed="true"] { border-color: var(--tv-brand); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tv-brand) 20%, transparent); }
+.tv-presets { display: block; }
+.tv-pre { display: grid; gap: 3px; padding: 6px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; text-align: left; min-height: 44px; }
+.tv-pre svg { width: 100%; height: auto; border-radius: 6px; }
+.tv-pre b { font-size: .8rem; }
+.tv-pre small { font-size: .7rem; color: var(--tv-muted); }
+.tv-putt { margin-top: 10px; }
+.tv-putt label, .tv-lead label { display: grid; gap: 4px; font-size: .85rem; color: var(--tv-muted); }
+.tv-putt select, .tv-lead input { min-height: 46px; padding: 8px 12px; border: 1px solid var(--tv-line); border-radius: 10px; background: #fff; font-size: 1rem; color: #17201a; }
+.tv-lead { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.tv-go { width: 100%; min-height: 54px; border: 0; border-radius: 12px; background: var(--tv-accent); color: #fff; font-weight: 800; font-size: 1.05rem; cursor: pointer; }
+.tv-go:disabled { opacity: .6; cursor: progress; }
+.tv-msg { margin: 8px 0 0; font-size: .9rem; min-height: 1.2em; }
+.is-err { color: #b3261e; font-weight: 600; }
+.tv-stage { position: sticky; top: 88px; background: #fff; border: 1px solid var(--tv-line); border-radius: 20px; padding: 14px; min-height: 360px; display: grid; gap: 12px; align-content: start; }
+.tv-empty { min-height: 330px; display: grid; place-items: center; text-align: center; color: var(--tv-muted); background: repeating-linear-gradient(45deg, var(--tv-soft), var(--tv-soft) 12px, #fff 12px, #fff 24px); border-radius: 14px; padding: 20px; }
+.tv-working p { font-weight: 600; color: var(--tv-brand); }
+.tv-spin { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--tv-soft); border-top-color: var(--tv-brand); animation: tvspin 1s linear infinite; }
+@keyframes tvspin { to { transform: rotate(360deg); } }
+.tv-compare { position: relative; margin: 0; border-radius: 14px; overflow: hidden; touch-action: none; cursor: ew-resize; user-select: none; }
+.tv-compare img { display: block; width: 100%; height: auto; }
+.tv-after { position: absolute; inset: 0; height: 100% !important; object-fit: cover; clip-path: inset(0 0 0 var(--pos)); }
+.tv-handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / .2); }
+.tv-handle::after { content: ""; position: absolute; top: 50%; left: 50%; width: 36px; height: 36px; margin: -18px 0 0 -18px; border-radius: 50%; background: #fff; box-shadow: 0 4px 14px rgb(0 0 0 / .3); }
+.tv-tag { position: absolute; top: 10px; padding: 4px 10px; border-radius: 999px; background: rgb(0 0 0 / .6); color: #fff; font-size: .75rem; font-weight: 700; }
+.tv-tag-b { left: 10px; } .tv-tag-a { right: 10px; }
+.tv-cmp-ctl { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+.tv-cmp-ctl button { min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--tv-line); background: #fff; cursor: pointer; font-weight: 600; }
+.tv-cmp-ctl input { accent-color: var(--tv-brand); width: 100%; height: 28px; }
+.tv-result { display: grid; gap: 8px; }
+.tv-result small { display: block; color: var(--tv-muted); }
+.tv-lock { display: flex; gap: 8px; align-items: center; min-height: 44px; }
+.tv-lock input { width: 20px; height: 20px; accent-color: var(--tv-brand); }
+.tv-fine { margin: 0; font-size: .78rem; color: var(--tv-muted); }
+.tv-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.tv-dl, .tv-price { display: inline-flex; align-items: center; gap: 6px; min-height: 46px; padding: 0 18px; border-radius: 999px; text-decoration: none; font-weight: 700; }
+.tv-dl { border: 1px solid var(--tv-line); color: var(--tv-brand); background: #fff; }
+.tv-price { background: var(--tv-brand); color: #fff; }
+.tv :focus-visible { outline: 3px solid color-mix(in srgb, var(--tv-brand) 55%, transparent); outline-offset: 2px; }
+@media (max-width: 900px) { .tv { grid-template-columns: 1fr; } .tv-stage { position: static; } }
+@media (max-width: 480px) { .tv-lead { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .tv-spin { animation: none; } }
+
+/* [hidden] must win over the display rules above. */
+.tv [hidden] { display: none !important; }
+/* `.tv button { color: inherit }` outranks single-class rules; restate colored buttons at equal weight. */
+.tv .tv-go { color: #fff; }
+.tv .tv-more { color: var(--tv-brand); }
+.tv .tv-chips button[aria-pressed="true"] { color: #fff; }
+
+.tv-swapnote { margin: 8px 0 0; padding: 10px 12px; border-radius: 10px; background: #fff7e0; border: 1px solid #f0d58a; color: #5a4300; font-size: .88rem; }
+.tv-product { margin-top: 16px; padding: 14px; border: 1px solid var(--tv-line, #e2e6dc); border-radius: 14px; background: #fff; display: grid; grid-template-columns: 1fr auto; gap: 10px 14px; align-items: start; }
+.tv-product h4 { grid-column: 1 / -1; margin: 0; font-size: 1rem; }
+.tv-ph { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.tv-ph img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; border-radius: 8px; border: 1px solid #eef0ea; }
+.tv-gauge { position: relative; width: 38px; height: 96px; border-radius: 8px; background: repeating-linear-gradient(#f1f4ec 0 1px, transparent 1px 16px), #f7f9f4; border: 1px solid #dfe5d6; display: flex; align-items: flex-end; justify-content: center; }
+.tv-gauge span { position: absolute; bottom: 0; width: 100%; background: linear-gradient(#6aa84f, #3f7d34); border-radius: 0 0 7px 7px; }
+.tv-gauge b { position: relative; z-index: 1; font-size: .7rem; color: #12320b; background: #ffffffcc; padding: 0 3px; border-radius: 4px; margin-bottom: 2px; }
+.tv-specs { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.tv-specs li { font-size: .82rem; padding: 4px 9px; border-radius: 999px; background: #f1f4ec; color: #2a3a22; }
+.tv-product .tv-fine { grid-column: 1 / -1; }
+@media (max-width: 560px) { .tv-product { grid-template-columns: 1fr; } .tv-gauge { display: none; } }
+
+.tv-stage { scroll-margin-top: 84px; }
+
+/* Putting green step */
+.tv-step h3 em { font: 500 .78rem/1 Inter, system-ui, sans-serif; color: var(--tv-muted); font-style: normal; }
+.tv-shapes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tv-pre svg { width: 100%; height: auto; border-radius: 8px; display: block; }
+.tv-pre-none { place-items: center; align-content: center; text-align: center; min-height: 96px; }
+.tv-none-x { font-size: 1.6rem; line-height: 1; color: var(--tv-muted); }
+.tv-sub { margin-top: 14px; display: grid; gap: 6px; }
+.tv-sub > b { font-size: .88rem; }
+.tv-seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.tv-seg button { display: grid; gap: 2px; justify-items: center; min-height: 52px; padding: 8px 6px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; }
+.tv-seg button small { color: var(--tv-muted); font-size: .72rem; }
+.tv-seg button[aria-pressed="true"], .tv-pt[aria-pressed="true"] { border-color: var(--tv-brand); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tv-brand) 20%, transparent); }
+.tv-pturf { display: flex; gap: 8px; overflow-x: auto; padding: 3px 3px 8px; scroll-snap-type: x proximity; }
+.tv-pt { flex: 0 0 92px; display: grid; gap: 2px; padding: 6px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; text-align: left; scroll-snap-align: start; align-content: start; }
+.tv-pt img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+.tv-pt b { font-size: .74rem; line-height: 1.15; }
+.tv-pt small { font-size: .68rem; color: var(--tv-muted); }
+@media (max-width: 480px) { .tv-shapes { grid-template-columns: repeat(2, 1fr); } }
+
+/* Accordion flow: one step open at a time, closed steps show the choice. */
+.tv-controls { display: grid; gap: 10px; align-content: start; }
+.tv-step { border: 1px solid var(--tv-line); border-radius: 14px; background: #fff; overflow: hidden; }
+.tv-step.is-open { border-color: color-mix(in srgb, var(--tv-brand) 45%, var(--tv-line)); box-shadow: 0 4px 16px rgb(0 0 0 / .05); }
+.tv-hd { width: 100%; display: grid; grid-template-columns: auto 1fr auto auto; gap: 10px; align-items: center; min-height: 52px; padding: 8px 14px; background: none; border: 0; cursor: pointer; text-align: left; }
+.tv-num { width: 24px; height: 24px; border-radius: 50%; background: var(--tv-soft); color: var(--tv-muted); display: grid; place-items: center; font-size: .78rem; font-weight: 700; }
+.tv-step.is-open .tv-num { background: var(--tv-brand); color: #fff; }
+.tv-step.is-done:not(.is-open) .tv-num { background: color-mix(in srgb, var(--tv-brand) 14%, #fff); color: var(--tv-brand); }
+.tv-ttl { font-weight: 700; font-size: .98rem; }
+.tv-ttl em { font: 500 .75rem/1 Inter, system-ui, sans-serif; color: var(--tv-muted); font-style: normal; margin-left: 4px; }
+.tv-sum { font-size: .84rem; color: var(--tv-muted); max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tv-step.is-open .tv-sum { display: none; }
+.tv-chev { color: var(--tv-muted); transition: transform .2s ease; }
+.tv-step.is-open > .tv-hd .tv-chev { transform: rotate(180deg); }
+.tv-body { padding: 4px 14px 16px; display: grid; gap: 10px; }
+.tv-drop { display: block; border: 2px dashed var(--tv-line); border-radius: 12px; background: var(--tv-soft); cursor: pointer; overflow: hidden; position: relative; min-height: 96px; }
+.tv-drop:hover, .tv-drop:focus-within { border-color: var(--tv-brand); }
+.tv-drop-in { display: grid; justify-items: center; gap: 2px; padding: 14px; text-align: center; color: var(--tv-brand); }
+.tv-thumb { width: 100%; max-height: 150px; object-fit: cover; display: block; }
+.tv-go { margin-top: 2px; }
+
+/* Turf picker: category tabs, then a swipeable row (or a wrapped grid for All). */
+.tv-cat { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.tv-tabs { display: flex; gap: 5px; min-width: 0; overflow-x: auto; scrollbar-width: none; padding: 2px 0; }
+.tv-tabs button { white-space: nowrap; min-height: 34px; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--tv-line); background: #fff; cursor: pointer; font-size: .8rem; font-weight: 600; }
+.tv-tabs button i { font-style: normal; font-weight: 500; color: var(--tv-muted); margin-left: 2px; }
+.tv .tv-tabs button[aria-selected="true"] { background: var(--tv-brand); border-color: var(--tv-brand); color: #fff; }
+.tv-tabs button[aria-selected="true"] i { color: #ffffffcc; }
+.tv-arrows { display: flex; gap: 4px; flex: none; }
+@media (max-width: 900px) { .tv-arrows { display: none; } }
+.tv-arrows button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--tv-line); background: #fff; cursor: pointer; font-size: 1.2rem; line-height: 1; }
+.tv-swatches, .tv-pturf { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding: 3px 3px 8px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+.tv-swatches.is-all { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); overflow: visible; max-height: 340px; overflow-y: auto; }
+.tv-sw { flex: 0 0 112px; display: grid; gap: 2px; padding: 6px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; text-align: left; align-content: start; scroll-snap-align: start; }
+.tv-swatches.is-all .tv-sw { flex: initial; }
+.tv-sw img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; }
+.tv-sw b { font-size: .78rem; line-height: 1.15; }
+.tv-sw small { font-size: .68rem; color: var(--tv-muted); line-height: 1.2; }
+.tv-swipe { margin-top: -2px; }
+.tv-next { justify-self: start; min-height: 42px; padding: 0 20px; border-radius: 999px; border: 0; background: var(--tv-brand); color: #fff; font-weight: 700; cursor: pointer; }
+.tv .tv-next { color: #fff; }
+
+/* Putting green: switch, compact shapes, one-line size choice. */
+.tv-switch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; min-height: 36px; justify-self: start; }
+.tv-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.tv-track { width: 42px; height: 24px; border-radius: 999px; background: #cfd5c8; position: relative; transition: background .2s ease; flex: none; }
+.tv-track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / .3); transition: transform .2s ease; }
+.tv-switch input:checked + .tv-track { background: var(--tv-brand); }
+.tv-switch input:checked + .tv-track::after { transform: translateX(18px); }
+.tv-switch input:focus-visible + .tv-track { outline: 3px solid color-mix(in srgb, var(--tv-brand) 55%, transparent); outline-offset: 2px; }
+.tv-shapes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tv-pre { padding: 5px; gap: 3px; min-height: 0; }
+.tv-pre b { font-size: .76rem; }
+.tv-pt { flex-basis: 96px; }
+@media (prefers-reduced-motion: reduce) { .tv-chev, .tv-track, .tv-track::after { transition: none; } }
+
+/* Putting green sub-steps: shape, then size, then putting turf. */
+.tv-subs { display: grid; gap: 8px; }
+.tv-sub-step { border: 1px solid var(--tv-line); border-radius: 12px; background: #fff; overflow: hidden; }
+.tv-sub-step.is-open { border-color: color-mix(in srgb, var(--tv-brand) 40%, var(--tv-line)); }
+.tv-sub-hd { width: 100%; display: grid; grid-template-columns: auto auto 1fr auto; gap: 10px; align-items: center; min-height: 46px; padding: 6px 12px; background: none; border: 0; cursor: pointer; text-align: left; }
+.tv-sub-n { width: 20px; height: 20px; border-radius: 50%; background: var(--tv-soft); color: var(--tv-muted); display: grid; place-items: center; font-size: .7rem; font-weight: 700; text-transform: uppercase; }
+.tv-sub-step.is-open .tv-sub-n { background: var(--tv-brand); color: #fff; }
+.tv-sub-t { font-weight: 700; font-size: .92rem; }
+.tv-sub-s { font-size: .8rem; color: var(--tv-muted); text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tv-sub-step.is-open .tv-sub-s { visibility: hidden; }
+.tv-sub-step .tv-chev { transition: transform .2s ease; }
+.tv-sub-step.is-open > .tv-sub-hd .tv-chev { transform: rotate(180deg); }
+.tv-sub-body { padding: 4px 12px 12px; display: grid; gap: 8px; }
+
+/* Grid columns must be allowed to shrink below their content, or a scrolling row inside widens the card and its last items get clipped. */
+.tv-body, .tv-sub-body, .tv-subs, .tv-controls { grid-template-columns: minmax(0, 1fr); }
+.tv-cat, .tv-tabs, .tv-swatches, .tv-pturf, .tv-sub-step { min-width: 0; }
+.tv-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: -2px; }
+.tv-foot .tv-swipe { margin: 0; }
+
+/* Smaller area chips. 36 px tall keeps them comfortable to tap. */
+.tv-chips { gap: 6px; }
+.tv-chips button { min-height: 36px; padding: 4px 12px; font-size: .86rem; font-weight: 600; }
+
+/* Lead form: columns must be able to shrink, and the boxes fill their column, so nothing sticks out of the card. */
+.tv-lead { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.tv-lead label { min-width: 0; }
+.tv-lead input, .tv-putt input, .tv-putt select { width: 100%; min-width: 0; }
+@media (max-width: 480px) { .tv-lead { grid-template-columns: minmax(0, 1fr); } }
+
+/* Project choice at the top of step 2 */
+.tv-modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.tv-mode { display: grid; gap: 2px; align-content: start; text-align: left; padding: 9px 10px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; min-height: 64px; }
+.tv-mode b { font-size: .84rem; line-height: 1.15; }
+.tv-mode small { font-size: .7rem; color: var(--tv-muted); line-height: 1.25; }
+.tv-mode[aria-checked="true"] { border-color: var(--tv-brand); background: color-mix(in srgb, var(--tv-brand) 7%, #fff); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tv-brand) 18%, transparent); }
+.tv-where { margin: 4px 0 -2px; font-weight: 700; font-size: .9rem; }
+@media (max-width: 480px) { .tv-modes { grid-template-columns: minmax(0, 1fr); } .tv-mode { min-height: 0; } }
+
+/* Shortcut tab: skip the lawn turf and go straight to the putting green. */
+.tv .tv-tabs .tv-tab-putt { display: inline-flex; align-items: center; gap: 5px; border-style: dashed; border-color: var(--tv-brand); color: var(--tv-brand); background: #fff; }
+.tv .tv-tabs .tv-tab-putt:hover { background: color-mix(in srgb, var(--tv-brand) 8%, #fff); }
+.tv-link { justify-self: start; background: none; border: 0; padding: 4px 0; color: var(--tv-brand); font-weight: 600; font-size: .86rem; text-decoration: underline; cursor: pointer; min-height: 36px; }
+.tv .tv-link { color: var(--tv-brand); }
+
+/* Border choices */
+.tv-borders { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 8px; }
+.tv-bd { display: grid; gap: 2px; align-content: start; text-align: left; padding: 6px; border: 2px solid var(--tv-line); border-radius: 12px; background: #fff; cursor: pointer; }
+.tv-bd svg { width: 100%; height: auto; border-radius: 7px; display: block; }
+.tv-bd b { font-size: .78rem; line-height: 1.15; margin-top: 3px; }
+.tv-bd small { font-size: .68rem; color: var(--tv-muted); }
+.tv-bd[aria-checked="true"] { border-color: var(--tv-brand); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tv-brand) 20%, transparent); }
+.tv-seg { grid-template-columns: repeat(auto-fit, minmax(76px, 1fr)); }
+
+/* Phone layout fixes (found in the 375 px audit). */
+@media (max-width: 600px) {
+  /* all four turf tabs visible: wrap instead of scrolling the shortcut out of view */
+  .tv-tabs { flex-wrap: wrap; overflow: visible; }
+  .tv-tabs button { flex: 0 1 auto; }
+  /* header: number, then title with its summary underneath, so the title never wraps to three lines */
+  .tv-hd { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "num ttl chev" "num sum chev"; row-gap: 0; align-items: center; }
+  .tv-num { grid-area: num; } .tv-ttl { grid-area: ttl; } .tv-sum { grid-area: sum; max-width: none; white-space: normal; font-size: .8rem; line-height: 1.25; } .tv-chev { grid-area: chev; }
+  .tv-sum:empty { display: none; }
+  .tv-hd { min-height: 56px; padding-top: 6px; padding-bottom: 6px; }
+}
+@media (max-width: 900px) {
+  /* the result box sits below the form on a phone: keep the placeholder short */
+  .tv-stage { min-height: 0; padding: 10px; }
+  .tv-empty { min-height: 120px; padding: 12px; font-size: .9rem; }
+}

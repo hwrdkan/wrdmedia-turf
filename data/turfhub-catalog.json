@@ -1,0 +1,4415 @@
+{
+  "brand": "TurfHub",
+  "brandLegal": "TurfHub, LLC",
+  "source": "turfhub.com WooCommerce Store API, pulled 2026-09-26. Specs are TurfHub's published bullets; nothing inferred.",
+  "claims": {
+    "coolflo": {
+      "text": "CoolFlo: yarn shape increases airflow and lowers surface temperature",
+      "source": "turfhub.com product pages (KEY FEATURES)"
+    },
+    "warehouses": {
+      "text": "Nationwide, fully stocked warehouses: same-day pick-up, same-day delivery or next-day shipping",
+      "source": "turfhub.com/about"
+    },
+    "lead_free": {
+      "text": "Lead-free certificate published",
+      "source": "turfhub.com/lead-free-certificate"
+    }
+  },
+  "uses": {
+    "landscape": "Front and back yards",
+    "pet": "Pet areas and dog runs",
+    "putting": "Putting greens",
+    "sport": "Sports and training",
+    "play": "Play areas",
+    "wall": "Walls and privacy"
+  },
+  "lines": [
+    {
+      "id": "bermuda-blend-light",
+      "name": "Bermuda Blend Light",
+      "sku": "BERMUDA-BLEND-LIGHT",
+      "series": "Bermuda",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Bermuda Series"
+      ],
+      "tagline": "Bermuda Blend Light features a mix of olive green and field green turf fibers that delivers a superior natural aesthetic. The turfs Mini Wave shaped yarn fibers are highly durable and disperse sunlight, giving the turf a low sheen and a surface that is 15 degrees cooler to the touch. This synthetic grass is perfect for any home yardscape.",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 45.0,
+        "totalWeightOz": 72.0,
+        "drainRateInPerHr": 28.0,
+        "warrantyYears": 5.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Green/Brown",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "rollWidth": "15\u2019",
+        "infill": "1-2 lbs"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "45 oz",
+        "Total Weight": "72 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Green/Brown",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturize PE",
+        "Primary Backing Material": "7 oz Dual Layered Non-expansive",
+        "Secondary Coating Material": "20 oz Polyurethane",
+        "Tuft Bind": ">10 lbs.",
+        "Machine Gauge": "3/8\u201d",
+        "Infill Ratio": "1-2 lbs",
+        "Roll Width": "15\u2019",
+        "Drain Rate": ">28 inch per hour",
+        "Shipping Weight": "750 lbs per roll (15 x 100)",
+        "Roll Diameter": "24 inches",
+        "Warranty": "5 year",
+        "Recommended Use": "Low to Moderate Traffic"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Mini Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/e9337af97e13c7d9.jpg",
+        "/img/vendor/7d7dfa866fac7c1d.jpg",
+        "/img/vendor/68aa3b2e8dc2b5f0.jpg",
+        "/img/vendor/006e51be8cc006c1.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Bermuda-Blend-Light-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Bermuda-Blend-Light-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/bermuda-blend-light/",
+      "swatchLab": {
+        "mean": [
+          42.25,
+          -31.82,
+          40.15
+        ],
+        "std": [
+          12.94,
+          8.47,
+          9.18
+        ],
+        "n": 9875
+      }
+    },
+    {
+      "id": "bermuda-blend",
+      "name": "Bermuda Blend",
+      "sku": "BERMUDA-BLEND",
+      "series": "Bermuda",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Bermuda Series"
+      ],
+      "tagline": "Bermuda Blend features a mix of olive green and field green turf fibers that delivers a superior natural aesthetic. The turfs Mini Wave shaped yarn fibers are highly durable and disperse sunlight, giving the turf a low sheen and a surface that is 15 degrees cooler to the touch. This synthetic grass is perfect for any home yardscape.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 82.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mini Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "82 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mini Wave"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Mini Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/5ecca6e49d0580c7.jpg",
+        "/img/vendor/1f9c67ab20c9d350.jpg",
+        "/img/vendor/0b00397747cc74a0.jpg",
+        "/img/vendor/0be71d6a8ae6597b.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Bermuda-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Bermuda-Blend-CAD-Install-2025-2.pdf",
+      "source": "https://turfhub.com/product/bermuda-blend/",
+      "swatchLab": {
+        "mean": [
+          44.77,
+          -25.98,
+          34.36
+        ],
+        "std": [
+          12.39,
+          7.53,
+          8.74
+        ],
+        "n": 9566
+      }
+    },
+    {
+      "id": "bermuda-pro",
+      "name": "Bermuda Pro",
+      "sku": "BERMUDA-PRO",
+      "series": "Bermuda",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Bermuda Series"
+      ],
+      "tagline": "Bermuda Pro features a balanced mix of olive green and field green turf fibers that emulate an extremely realistic looking grass. Made with one of the strongest yarns on the market it will last through all types of wear and weather. This durable synthetic turf is ideal for all high traffic areas.",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 80.0,
+        "totalWeightOz": 107.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mini Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "80 oz",
+        "Total Weight": "107 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mini Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Mini Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/13a2cb5842988b24.jpg",
+        "/img/vendor/b918bfcb860a881e.jpg",
+        "/img/vendor/8091ab5fc7297538.jpg",
+        "/img/vendor/652d1058d8c51b49.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Bermuda-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Bermuda-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/bermuda-pro/",
+      "swatchLab": {
+        "mean": [
+          51.7,
+          -30.84,
+          41.26
+        ],
+        "std": [
+          12.24,
+          8.22,
+          9.96
+        ],
+        "n": 10907
+      }
+    },
+    {
+      "id": "th-blend",
+      "name": "TH Blend",
+      "sku": "TH-BLEND",
+      "series": "Builder",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Blend is inspired by our dedicated builders and contractors, the Turfhub value engineered Builder Series was designed to include all the features you\u2019ve come to love at an unbeatable value. We have put extreme care into crafting the most value driven line-up Turfhub has ever offered. Our most realistic yarn designs with our industry leading draining technology makes this series a huge hit with ",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 45.0,
+        "totalWeightOz": 72.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 5.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mini Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "45 oz",
+        "Total Weight": "72 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inch per hour",
+        "Warranty": "5 year",
+        "Blade Shape": "Mini Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/338bc15dc6912b25.jpg",
+        "/img/vendor/66972b6bfc1f2fb1.jpg",
+        "/img/vendor/dd3358b8675a67f4.jpg",
+        "/img/vendor/d86eccbe645be045.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-TH-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TH-Blend-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/th-blend/",
+      "swatchLab": {
+        "mean": [
+          46.64,
+          -18.69,
+          31.34
+        ],
+        "std": [
+          9.57,
+          3.84,
+          5.1
+        ],
+        "n": 9545
+      }
+    },
+    {
+      "id": "th-select",
+      "name": "TH Select",
+      "sku": "TH-SELECT",
+      "series": "Builder",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Select is inspired by our dedicated builders and contractors, the Turfhub value engineered Builder Series was designed to include all the features you\u2019ve come to love at an unbeatable value. We have put extreme care into crafting the most value driven line-up Turfhub has ever offered. Our most realistic yarn designs with our industry leading draining technology makes this series a huge hit with",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 65.0,
+        "totalWeightOz": 92.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/DK Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "M Shape",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "65 oz",
+        "Total Weight": "92 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/DK Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "M Shape"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/07e1cbea7a7167d7.jpg",
+        "/img/vendor/a75acddc0a93131b.jpg",
+        "/img/vendor/a5fe375cae708aa1.jpg",
+        "/img/vendor/becb3eab6d25f400.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-TH-Select-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TH-Select-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/th-select/",
+      "swatchLab": {
+        "mean": [
+          46.51,
+          -19.47,
+          33.58
+        ],
+        "std": [
+          10.29,
+          4.56,
+          5.83
+        ],
+        "n": 11027
+      }
+    },
+    {
+      "id": "th-ultra",
+      "name": "TH Ultra",
+      "sku": "TH-ULTRA",
+      "series": "Builder",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Ultra This extremely dense, short piled turf is designed to replicate the resilient power and vibrant beauty of the turf found on the Pacific coastline. This effect is achieved through the C shaped two tone blend of field and olive yarns. This combination creates a product that is soft to the touch yet extremely durable underfoot, making the Ultra Play Series a top choice for home yardscapes.",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 90.0,
+        "totalWeightOz": 117.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "C Shape",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "90 oz",
+        "Total Weight": "117 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "C Shape"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/1a7b3a8db794d8a6.jpg",
+        "/img/vendor/600f90029684453e.jpg",
+        "/img/vendor/e194b0632948d5d5.jpg",
+        "/img/vendor/d3bfd4028f7a9d87.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2026/02/TurfHub-TH-Ultra-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TH-Ultra-CAD-Install-2025-2.pdf",
+      "source": "https://turfhub.com/product/th-ultra/",
+      "swatchLab": {
+        "mean": [
+          55.45,
+          -29.77,
+          38.95
+        ],
+        "std": [
+          9.17,
+          5.1,
+          7.44
+        ],
+        "n": 10765
+      }
+    },
+    {
+      "id": "coastal-blend",
+      "name": "Coastal Blend",
+      "sku": "COASTAL-BLEND",
+      "series": "Coastal Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Coastal Blend Series"
+      ],
+      "tagline": "Coastal Blend features a Mini Wave shaped yarn blade which, when coupled with the field and apple green tones, provides the most versatility to the touch and appearance. Along with the visual appeal, the Mini Wave yarn blend of the Coastal Blend is one of the softest turfs we offer.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Tri Color S",
+        "yarn": "PE Monofi lament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Apple/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofi lament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Warranty": "15 year",
+        "Blade Shape": "Tri Color S"
+      },
+      "features": [
+        "Unique 3D Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/a5c37b6f72cc4588.jpg",
+        "/img/vendor/42a39b21bddbfb73.jpg",
+        "/img/vendor/c5f8714a8016eab6.jpg",
+        "/img/vendor/124b9c42cdf7b8a9.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Coastal-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Coastal-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/coastal-blend/",
+      "swatchLab": {
+        "mean": [
+          44.49,
+          -24.74,
+          35.42
+        ],
+        "std": [
+          12.82,
+          6.22,
+          7.85
+        ],
+        "n": 8536
+      }
+    },
+    {
+      "id": "coastal-blend-pro",
+      "name": "Coastal Blend Pro",
+      "sku": "COASTAL-BLEND-PRO",
+      "series": "Coastal Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Coastal Blend Series"
+      ],
+      "tagline": "Coastal Blend Pro features a Mini Wave shaped yarn blade which, when coupled with the field and apple green tones, provides the most versatility to the touch and appearance. Along with the visual appeal, the Mini Wave yarn blend of the Coastal Blend is one of the softest turfs we offer.",
+      "specs": {
+        "pileHeightIn": 1.875,
+        "faceWeightOz": 76.0,
+        "totalWeightOz": 103.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Tri Color S",
+        "yarn": "PE Monofi lament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 7/8\u201d",
+        "Face Weight": "76 oz",
+        "Total Weight": "103 oz",
+        "Yarn Color": "Field/Apple/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofi lament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Tri Color S"
+      },
+      "features": [
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/f220923b68f5ff4a.jpg",
+        "/img/vendor/3c5265e31c166a50.jpg",
+        "/img/vendor/846e436c62b20f2c.jpg",
+        "/img/vendor/f3ef58947530779e.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Coastal-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Coastal-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/coastal-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          44.05,
+          -24.18,
+          35.19
+        ],
+        "std": [
+          13.52,
+          6.73,
+          8.21
+        ],
+        "n": 9956
+      }
+    },
+    {
+      "id": "coastal-blend-elite",
+      "name": "Coastal Blend Elite",
+      "sku": "COASTAL-BLEND-ELITE",
+      "series": "Coastal Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Coastal Blend Series"
+      ],
+      "tagline": "Coastal Elite features a Tri-Color S Shaped yarn blade which, when coupled with the field, apple, and olive green tones, provides the most versatility to the touch and appearance. Along with the visual appeal, the S-Shaped Blade of the Coastal Blend Elite is one of the softest turfs we offer.",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 100.0,
+        "totalWeightOz": 127.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Tri Color S",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "100 oz",
+        "Total Weight": "127 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Tri Color S"
+      },
+      "features": [
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/c38b261ea35a6d64.jpg",
+        "/img/vendor/7d3c6d28ce35fbc4.jpg",
+        "/img/vendor/09546afca304aacb.jpg",
+        "/img/vendor/671d6c9e2ac412aa.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Coastal-Elite-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Coastal-Elite-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/coastal-blend-elite/",
+      "swatchLab": {
+        "mean": [
+          45.27,
+          -24.42,
+          36.99
+        ],
+        "std": [
+          11.19,
+          5.47,
+          7.51
+        ],
+        "n": 9890
+      }
+    },
+    {
+      "id": "eco-natural",
+      "name": "ECO Natural",
+      "sku": "ECO-NATURAL",
+      "series": "ECO",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "ECO"
+      ],
+      "tagline": "Eco Natural features a proprietary Polypropylene Dispersion backing system that is not only Eco friendly it is 100 percent permeable and dimensionally stable. The use of a 3 dimensional fluted mini C face yarn produces a Multi-directional turf that will look great from all directions.",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 50.0,
+        "totalWeightOz": 65.0,
+        "drainRateInPerHr": 200.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "3 Dimensional Texturized",
+        "yarn": "Non Directional PE",
+        "stitchGauge": "3/8\u201d",
+        "backing": "100 percent circulatory Poly Propylene Dispersion"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "50 oz",
+        "Total Weight": "65 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "Non Directional PE",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "100 percent circulatory Poly Propylene Dispersion",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "200+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "3 Dimensional Texturized"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3 Dimensional Texturized Fluted C blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/bc4d536fdd65fd11.jpg",
+        "/img/vendor/9516b1c485eaf65a.jpg",
+        "/img/vendor/7421a47641f1b792.jpg",
+        "/img/vendor/1ab9c00394571ea4.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/08/TurfHub-Eco-Natural-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Eco-Natural-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/eco-natural/",
+      "swatchLab": {
+        "mean": [
+          46.36,
+          -20.14,
+          30.29
+        ],
+        "std": [
+          10.03,
+          4.78,
+          6.05
+        ],
+        "n": 6936
+      }
+    },
+    {
+      "id": "eco-green",
+      "name": "ECO Green",
+      "sku": "ECO-GREEN",
+      "series": "ECO",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "ECO"
+      ],
+      "tagline": "Eco Green is d esigned for realism, its Fluted mini C fibers create a soft, natural feel and a lush, Multi-directional appearance that blends beautifully into any landscape.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 70.0,
+        "drainRateInPerHr": 200.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Fluted Mini C",
+        "yarn": ">80% PCR PE Mono",
+        "stitchGauge": "3/8\u201d",
+        "backing": "100 percent circulatory Poly Propylene Dispersion"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "55\u00a0oz",
+        "Total Weight": "70 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": ">80% PCR PE Mono",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "100 percent circulatory Poly Propylene Dispersion",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "200+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Fluted Mini C"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3 Dimensional Texturized Fluted C blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/43d45b669c18c01e.jpg",
+        "/img/vendor/41ea61c42dd3ab9c.jpg",
+        "/img/vendor/6f114f6869c04261.jpg",
+        "/img/vendor/fc39a8eee9daff9c.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/08/TurfHub-Eco-Green-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Eco-Green-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/eco-green/",
+      "swatchLab": {
+        "mean": [
+          46.37,
+          -18.59,
+          29.96
+        ],
+        "std": [
+          12.91,
+          4.3,
+          6.04
+        ],
+        "n": 8154
+      }
+    },
+    {
+      "id": "natural-fescue-blend",
+      "name": "Natural Fescue Blend",
+      "sku": "FESCUE-BLEND",
+      "series": "Fescue Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Fescue Blend Series"
+      ],
+      "tagline": "Natural Fescue Blend contains a dynamic mix of fi eld/dk olive/brown and Mini wave shaped yarn blades to emulate the deepest color of green we off er. Mixed with the brown and green thatch, the Fescue Series stands out as one of the most realistic artifi cial turf products on the market.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/DK Olive/ Brown",
+        "thatchColor": "Brown/Green",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "stitchGauge": "5/8\u201d",
+        "infill": "1-2 lbs"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/DK Olive/ Brown",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing Material": "27 oz 2 layer PU",
+        "Tuft Bind": ">10 lbs.",
+        "Stitch Gauge": "5/8\u201d",
+        "Infill Ratio": "1-2 lbs",
+        "Drain Rate": ">30 inches per hour",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/0ff053e65c41e189.jpg",
+        "/img/vendor/e8a37d56a245f646.jpg",
+        "/img/vendor/fe0c48a690c82180.jpg",
+        "/img/vendor/e9dad796b60e7d8c.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Natural-Fescue-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Natural-Fescue-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/natural-fescue-blend/",
+      "swatchLab": {
+        "mean": [
+          43.34,
+          -18.22,
+          32.52
+        ],
+        "std": [
+          12.94,
+          5.26,
+          8.35
+        ],
+        "n": 8863
+      }
+    },
+    {
+      "id": "fescue-blend-pro",
+      "name": "Fescue Blend Pro",
+      "sku": "FESCUE-BLEND-PRO",
+      "series": "Fescue Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Fescue Blend Series"
+      ],
+      "tagline": "Fescue Blend Pro contains a dynamic mix of field and olive M / S / C blended shaped yarn blades to emulate the deepest color of green we offer. Mixed with the brown and green thatch, the Fescue Series stands out as one of the most realistic artificial turf products on the market.",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 70.0,
+        "totalWeightOz": 97.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Olive / Lt Olive / FG",
+        "thatchColor": "FG/Tan",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "stitchGauge": "3/8\u201d",
+        "infill": "2-3 lbs"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "70 oz",
+        "Total Weight": "97 oz",
+        "Yarn Color": "Olive / Lt Olive / FG",
+        "Thatch Color": "FG/Tan",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturized PP",
+        "Stitch Gauge": "3/8\u201d",
+        "Infill Ratio": "2-3 lbs",
+        "Drain Rate": ">30 inches per hour",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/d6da31ec45fdcd42.jpg",
+        "/img/vendor/fee3f32a1ffb0011.jpg",
+        "/img/vendor/0dab5a2551a07d05.jpg",
+        "/img/vendor/97fcab8fae6b8da0.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Fescue-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Fescue-Pro-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/fescue-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          45.05,
+          -14.46,
+          27.84
+        ],
+        "std": [
+          11.31,
+          3.19,
+          4.93
+        ],
+        "n": 9137
+      }
+    },
+    {
+      "id": "natural-fescue-elite",
+      "name": "Natural Fescue Elite",
+      "sku": "FESCUE-BLEND-ELITE",
+      "series": "Fescue Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Fescue Blend Series"
+      ],
+      "tagline": "Natural Fescue Elite contains a dynamic mix of field/dk olive/ brown and Mini wave shaped yarn blades to emulate the deepest color of green we offer. Mixed with the brown and green thatch, the Fescue Series stands out as one of the most realistic artificial turf products on the market.",
+      "specs": {
+        "pileHeightIn": 2.0,
+        "faceWeightOz": 85.0,
+        "totalWeightOz": 112.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/ DK Olive/Brown",
+        "thatchColor": "Brown/Green",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "stitchGauge": "5/8\u201d"
+      },
+      "specsRaw": {
+        "Pile Height": "2\u201d",
+        "Face Weight": "85 oz",
+        "Total Weight": "112 oz",
+        "Yarn Color": "Field/ DK Olive/Brown",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing Material": "27 oz 2 layer PU",
+        "Stitch Gauge": "5/8\u201d",
+        "Drain Rate": ">30 inches per hour",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/5658960147c4e0d6.jpg",
+        "/img/vendor/bcb486279725cb71.jpg",
+        "/img/vendor/f7a5d06f04fde5ca.jpg",
+        "/img/vendor/52afc38c537df7c4.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Natural-Fescue-Elite-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Natural-Fescue-Elite-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/natural-fescue-elite/",
+      "swatchLab": {
+        "mean": [
+          42.27,
+          -15.85,
+          30.54
+        ],
+        "std": [
+          13.54,
+          4.95,
+          7.67
+        ],
+        "n": 9393
+      }
+    },
+    {
+      "id": "glacier-blend",
+      "name": "Glacier Blend",
+      "sku": "GLACIER-BLEND",
+      "series": "Glacier Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Glacier Blend Series"
+      ],
+      "tagline": "Glacier Blend is known for its plush field and apple green M shaped yarn blades. It\u2019s extremely durable and low sheen, making it ideal for any front, side or back yard.",
+      "specs": {
+        "pileHeightIn": 1.5,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "M Shape",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/2\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "M Shape"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/174378196e1bb67d.jpg",
+        "/img/vendor/b0874b01b294bcce.jpg",
+        "/img/vendor/83342290cd51eee1.jpg",
+        "/img/vendor/d0b3961a5420734a.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Glacier-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Glacier-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/glacier-blend/",
+      "swatchLab": {
+        "mean": [
+          37.88,
+          -32.67,
+          36.57
+        ],
+        "std": [
+          12.66,
+          9.56,
+          8.8
+        ],
+        "n": 9397
+      }
+    },
+    {
+      "id": "glacier-blend-pro",
+      "name": "Glacier Blend Pro",
+      "sku": "GLACIER-BLEND-PRO",
+      "series": "Glacier Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Glacier Blend Series"
+      ],
+      "tagline": "Glacier Blend Pro is known for its plush field and apple green M shaped yarn blades. It\u2019s extremely durable and low sheen, making it ideal for any front, side or back yard.",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 75.0,
+        "totalWeightOz": 102.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "M Shape",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "75 oz",
+        "Total Weight": "102 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "M Shape"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/a7e413d0c4bf191c.jpg",
+        "/img/vendor/e4763832718cb784.jpg",
+        "/img/vendor/e5dacfe8c6207c76.jpg",
+        "/img/vendor/80c5493066d798cb.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Glacier-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Glacier-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/glacier-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          40.3,
+          -35.3,
+          37.45
+        ],
+        "std": [
+          12.57,
+          10.15,
+          9.25
+        ],
+        "n": 10006
+      }
+    },
+    {
+      "id": "malibu-blend-elite",
+      "name": "Malibu Blend Elite",
+      "sku": "MALIBU-BLEND-ELITE",
+      "series": "Malibu Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Malibu Blend"
+      ],
+      "tagline": "Malibu Blend Elite Diversity is the benchmark feature of all 3D Wave shaped yarn blades. This turf is both remarkably comfortable to the touch and stoically retains its shape after footfall. It\u2019s soft yet durable, making it the best of both worlds. This extra stability and deluxe texture is accredited to its very diverse shape. In addition to the aforementioned benefits, the structure of the 3D Wa",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 100.0,
+        "totalWeightOz": 127.0,
+        "drainRateInPerHr": 200.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Clear Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "100 oz",
+        "Total Weight": "127 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "Clear Permeable",
+        "Drain Rate": "200+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/88f67722809f2429.jpg",
+        "/img/vendor/de63654b3599856d.jpg",
+        "/img/vendor/8ab3ec99b066a2f1.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/08/TurfHub-Malibu-Elite-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/08/Malibu-Elite-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/malibu-blend-elite/",
+      "swatchLab": {
+        "mean": [
+          54.95,
+          -26.63,
+          39.9
+        ],
+        "std": [
+          14.61,
+          6.9,
+          9.22
+        ],
+        "n": 10908
+      }
+    },
+    {
+      "id": "mohave-blend",
+      "name": "Mohave Blend",
+      "sku": "MOHAVE-BLEND",
+      "series": "Mohave Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Mohave Blend Series"
+      ],
+      "tagline": "Mohave Blend contains soft Wave shaped blades and rich field and olive toned yarn. It is durable yet soft, making Mohave Blend ideal for any yardscape that deserves a bright lawn.",
+      "specs": {
+        "pileHeightIn": 1.5,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/2\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Wave blade",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/04871e1b36d64257.jpg",
+        "/img/vendor/9f66c3b68bdb4b1b.jpg",
+        "/img/vendor/29685f66890ba34d.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Mohave-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Mohave-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/mohave-blend/",
+      "swatchLab": {
+        "mean": [
+          37.31,
+          -32.35,
+          37.18
+        ],
+        "std": [
+          13.09,
+          8.88,
+          8.96
+        ],
+        "n": 10570
+      }
+    },
+    {
+      "id": "mohave-blend-pro",
+      "name": "Mohave Blend Pro",
+      "sku": "MOHAVE-PRO",
+      "series": "Mohave Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Mohave Blend Series"
+      ],
+      "tagline": "Mohave Blend Pro contains soft Wave shaped blades and rich field and olive toned yarn. With a dense face weight and a 1 7/8-inch pile height, Mohave Blend Pro is ideal for any front yard that deserves a plush lawn.",
+      "specs": {
+        "pileHeightIn": 1.875,
+        "faceWeightOz": 80.0,
+        "totalWeightOz": 117.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 7/8\u201d",
+        "Face Weight": "80 oz",
+        "Total Weight": "117 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Wave blade",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/b48dabab82b33076.jpg",
+        "/img/vendor/d460ca04de61b7ed.jpg",
+        "/img/vendor/3f9e0b7453867e08.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Mohave-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Mohave-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/mohave-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          41.79,
+          -28.68,
+          37.82
+        ],
+        "std": [
+          13.61,
+          8.89,
+          9.59
+        ],
+        "n": 10186
+      }
+    },
+    {
+      "id": "natural",
+      "name": "Natural Blend",
+      "sku": "NATURAL-BLEND",
+      "series": "Natural Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Natural Blend Series"
+      ],
+      "tagline": "Natural Blend looks realistic to the point of making earth grown grass appear synthetic. With its unique Mini Wave shaped yarn blades that provide durability and texture, driven home with a dynamic tone blend of field, olive and brown fibers atop brown thatch, it\u2019s these impressive characteristics that make it ideal for all residential and commercial applications.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 82.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive/Brown",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mini Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "82 oz",
+        "Yarn Color": "Field/Olive/Brown",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mini Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Mini Wave Shape blade",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/a9b63ea1f6cc25f6.jpg",
+        "/img/vendor/6524fbca5ebedbb3.jpg",
+        "/img/vendor/e477148f8e44283a.jpg",
+        "/img/vendor/9664fe8142796ba4.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Natural-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Natural-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/natural/",
+      "swatchLab": {
+        "mean": [
+          49.3,
+          -31.88,
+          46.94
+        ],
+        "std": [
+          12.19,
+          8.79,
+          10.04
+        ],
+        "n": 8983
+      }
+    },
+    {
+      "id": "natural-blend-pro",
+      "name": "Natural Blend Pro",
+      "sku": "NATURAL-BLEND-ELITE",
+      "series": "Natural Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Natural Blend Series"
+      ],
+      "tagline": "Natural Blend Pro is the tallest and densest turf around. With field, olive and brown Mini Wave shaped yarn blades coupled with its increased height, it appears even more real and authentic than earth grown turf. With a face weight of 80 oz, Natural Blend Pro performs just as good as it looks, making it the most ideal choice for landscape application such as parks, homes and commercial properties ",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 80.0,
+        "totalWeightOz": 107.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive/Brown",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mini Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "80 oz",
+        "Total Weight": "107 oz",
+        "Yarn Color": "Field/Olive/Brown",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mini Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique Mini Wave Shape blade",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/ee94cbff396f6b44.jpg",
+        "/img/vendor/cef1a511fd4b8dda.jpg",
+        "/img/vendor/5fda1a0209f18c2b.jpg",
+        "/img/vendor/7dc353ed89d2a9c8.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Natural-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Natural-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/natural-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          46.97,
+          -30.66,
+          45.05
+        ],
+        "std": [
+          12.31,
+          8.74,
+          10.17
+        ],
+        "n": 10497
+      }
+    },
+    {
+      "id": "newport-elite",
+      "name": "Newport Elite",
+      "sku": "NEWPORT-ELITE",
+      "series": "Newport Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Newport Blend Series"
+      ],
+      "tagline": "Newport Elite features a hollow 3D shaped yarn blade which, when coupled with the field and olive tones, provides versatility to the touch and appearance. Along with the visual appeal, the hollow yarn blend of the Newport Elite is one of the softest, yet durable blades we offer.",
+      "specs": {
+        "pileHeightIn": 2.0,
+        "faceWeightOz": 90.0,
+        "totalWeightOz": 117.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Hollow Blade",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "2 \u201d",
+        "Face Weight": "90 oz",
+        "Total Weight": "117 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Hollow Blade"
+      },
+      "features": [
+        "Unique 3D hollow blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/a9091fd7e59a901a.jpg",
+        "/img/vendor/cb96b16a981502dd.jpg",
+        "/img/vendor/73f3e05a68322802.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Newport-Elite-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Newport-Elite-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/newport-elite/",
+      "swatchLab": {
+        "mean": [
+          44.57,
+          -18.55,
+          32.08
+        ],
+        "std": [
+          11.36,
+          4.29,
+          5.75
+        ],
+        "n": 10551
+      }
+    },
+    {
+      "id": "heat-guard-blend-pro",
+      "name": "Heat Guard Blend Pro",
+      "sku": "HEAT-GUARD-BLEND-PRO",
+      "series": "Nylon",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Nylon"
+      ],
+      "tagline": "HeatGuard Blend Pro a Turf Hub exclusive product warrantied against reflective burns and melting from Low-E windows.",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 70.0,
+        "totalWeightOz": 90.0,
+        "drainRateInPerHr": 200.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple/Olive",
+        "thatchColor": "Olive Green / Dk Green",
+        "bladeShape": "Nylon",
+        "yarn": "3 tone nylon mono",
+        "stitchGauge": "3/8\u201d",
+        "backing": "100 percent circulatory Poly Propylene Dispersion"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "70 oz",
+        "Total Weight": "90 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple/Olive",
+        "Thatch Color": "Olive Green / Dk Green",
+        "Face Composition": "3 tone nylon mono",
+        "Thatch Material": "Texturized Nylon",
+        "Primary Backing": "100 percent circulatory Poly Propylene Dispersion",
+        "Drain Rate": "200+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Nylon"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo",
+        "Heat Guard"
+      ],
+      "images": [
+        "/img/vendor/347661cba242c943.jpg",
+        "/img/vendor/2367801f21e51c80.jpg",
+        "/img/vendor/12426b8445b8e864.jpg",
+        "/img/vendor/e9455a59b1262961.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Heat-Guard-Blend-Pro-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Heatguard-Blend-Pro-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/heat-guard-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          50.93,
+          -19.48,
+          33.93
+        ],
+        "std": [
+          12.29,
+          6.54,
+          7.69
+        ],
+        "n": 8232
+      }
+    },
+    {
+      "id": "heat-guard-blend",
+      "name": "Heat Guard Blend",
+      "sku": "HEAT-GUARD-BLEND",
+      "series": "Nylon",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Nylon"
+      ],
+      "tagline": "HeatGuard Blend a Turf Hub exclusive product warrantied against reflective burns and melting from Low-E windows.",
+      "specs": {
+        "pileHeightIn": 1.5,
+        "faceWeightOz": 76.0,
+        "totalWeightOz": 80.0,
+        "drainRateInPerHr": 200.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Olive Green / Dk Green",
+        "bladeShape": "Nylon",
+        "yarn": "Nylon Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "100 percent fully permeable Poly Propylene Dispersion"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/2\u201d",
+        "Face Weight": "76 oz",
+        "Total Weight": "80 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Olive Green / Dk Green",
+        "Face Composition": "Nylon Monofilament",
+        "Thatch Material": "Texturized Nylon",
+        "Primary Backing": "100 percent fully permeable Poly Propylene Dispersion",
+        "Drain Rate": "200+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Nylon"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo",
+        "Heat Guard"
+      ],
+      "images": [
+        "/img/vendor/dbb3cbc7f0fa7338.jpg",
+        "/img/vendor/22e57f7aedff11c6.jpg",
+        "/img/vendor/974bc36bfa3dfed8.jpg",
+        "/img/vendor/1ca111eb20858048.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Heat-Guard-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Heatguard-Blend-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/heat-guard-blend/",
+      "swatchLab": {
+        "mean": [
+          53.95,
+          -19.34,
+          34.4
+        ],
+        "std": [
+          11.53,
+          6.08,
+          6.94
+        ],
+        "n": 8246
+      }
+    },
+    {
+      "id": "pacific-blend",
+      "name": "Pacific Blend",
+      "sku": "PACIFIC-BLEND",
+      "series": "Pacific Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Pacific Blend Series"
+      ],
+      "tagline": "Pacific Blend is designed to replicate the resilient power and vibrant coastal green of the turf found on the Pacific coastline. This effect is achieved through the 3D Wave shaped two tone blend of field and olive yarn that are soft to the touch yet extremely durable underfoot, making the Pacific Series a top choice for home yardscapes.",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "3D W and 3D N",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "3D W and 3D N"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/dcee8c4b05a87589.jpg",
+        "/img/vendor/02b21265f5846f1a.jpg",
+        "/img/vendor/7be0bf097c7924c2.jpg",
+        "/img/vendor/c26d59851e6e7f56.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pacific-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pacific-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pacific-blend/",
+      "swatchLab": {
+        "mean": [
+          41.9,
+          -21.99,
+          30.14
+        ],
+        "std": [
+          10.19,
+          4.32,
+          5.89
+        ],
+        "n": 11413
+      }
+    },
+    {
+      "id": "pacific-blend-pro",
+      "name": "Pacific Blend Pro",
+      "sku": "PACIFIC-BLEND-PRO",
+      "series": "Pacific Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Pacific Blend Series"
+      ],
+      "tagline": "Pacific Blend Pro is designed to replicate the resilient power and vibrant coastal green of the turf found on the Pacific coastline. This effect is achieved through the 3D Wave shaped two tone blend of field and olive yarn that are soft to the touch yet extremely durable underfoot, making the Pacific Series a top choice for home yardscapes.",
+      "specs": {
+        "pileHeightIn": 1.875,
+        "faceWeightOz": 76.0,
+        "totalWeightOz": 103.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "3D W and 3D N",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 7/8\u201d",
+        "Face Weight": "76 oz",
+        "Total Weight": "103 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "3D W and 3D N"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/477e53abde25a2df.jpg",
+        "/img/vendor/fe445d39d013659a.jpg",
+        "/img/vendor/b9b0759e7581ee77.jpg",
+        "/img/vendor/e156794851d28c5a.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pacific-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pacific-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pacific-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          32.97,
+          -25.71,
+          31.83
+        ],
+        "std": [
+          14.25,
+          7.69,
+          9.2
+        ],
+        "n": 10649
+      }
+    },
+    {
+      "id": "santa-barbara-blend",
+      "name": "Santa Barbara Blend",
+      "sku": "SANTA-BARBARA",
+      "series": "Santa Barbara Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Santa Barbara Blend Series"
+      ],
+      "tagline": "The Santa Barbara Turf Series draws its inspiration from the lush, vibrant landscapes of Santa Barbara, California. Known for its stunning beauty, Santa Barbara has long been a source of inspiration for outdoor enthusiasts and landscape designers alike. The color combination and blade design features that set the Santa Barbara Turf Series apart. The newly engineered \u201cC\u201d Shape with Spine Blades hav",
+      "specs": {
+        "pileHeightIn": 1.625,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "stitchGauge": "3/8\u201d"
+      },
+      "specsRaw": {
+        "Pile Height": "1 5/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing Material": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": ">30 inches per hour",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/791f41fad0bc9fa4.jpg",
+        "/img/vendor/b0fa474483227cd2.jpg",
+        "/img/vendor/b6aa1ca530f50290.jpg",
+        "/img/vendor/7aff70b376b9561b.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Santa-Barbara-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2023/02/Santa-Barbara-CAD-Install-2023.pdf",
+      "source": "https://turfhub.com/product/santa-barbara-blend/",
+      "swatchLab": {
+        "mean": [
+          52.09,
+          -22.35,
+          29.11
+        ],
+        "std": [
+          11.87,
+          4.65,
+          6.47
+        ],
+        "n": 9811
+      }
+    },
+    {
+      "id": "santa-barbara-blend-pro",
+      "name": "Santa Barbara Blend Pro",
+      "sku": "SANTA-BARBARA-PRO",
+      "series": "Santa Barbara Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Santa Barbara Blend Series"
+      ],
+      "tagline": "The Santa Barbara Turf Series draws its inspiration from the lush, vibrant landscapes of Santa Barbara, California. Known for its stunning beauty, Santa Barbara has long been a source of inspiration for outdoor enthusiasts and landscape designers alike. The color combination and blade design features that set the Santa Barbara Turf Series apart. The newly engineered \u201cC\u201d Shape with Spine Blades hav",
+      "specs": {
+        "pileHeightIn": 1.875,
+        "faceWeightOz": 76.0,
+        "totalWeightOz": 103.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "stitchGauge": "3/8\u201d"
+      },
+      "specsRaw": {
+        "Pile Height": "1 7/8\u201d",
+        "Face Weight": "76 oz",
+        "Total Weight": "103 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing Material": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": ">30 inches per hour",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "Unique 3D blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/3b15ff0203773172.jpg",
+        "/img/vendor/489c535f66ed07cf.jpg",
+        "/img/vendor/47f4077cf3d44d75.jpg",
+        "/img/vendor/ba72e4dcde5c22a2.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Santa-Barbara-Pro-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2023/02/Santa-Barbara-Pro-CAD-Install-2023.pdf",
+      "source": "https://turfhub.com/product/santa-barbara-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          52.61,
+          -22.12,
+          28.53
+        ],
+        "std": [
+          11.77,
+          4.44,
+          6.07
+        ],
+        "n": 10516
+      }
+    },
+    {
+      "id": "sierra-blend",
+      "name": "Sierra Blend",
+      "sku": "SIERRA-BLEND",
+      "series": "Sierra Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Sierra Blend Series"
+      ],
+      "tagline": "Sierra Blend boasts a unique blend of spring and emerald green Wave shaped yarn blades that deliver a hybrid appearance of rich dark and brightly saturated greens. Mixed with the brown and green thatch, the Sierra Blend Series stands out as one of the most dynamically authentic artificial turf products on the market.",
+      "specs": {
+        "pileHeightIn": 1.5,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 82.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Spring/Emerald",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/2\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "82 oz",
+        "Yarn Color": "Spring/Emerald",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "The Wave shape blend blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/dd288233954e178e.jpg",
+        "/img/vendor/102bc0b288a3b304.jpg",
+        "/img/vendor/e070412f93630fbe.jpg",
+        "/img/vendor/2fc30799a6405b91.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Sierra-Blend-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Sierra-Blend-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/sierra-blend/",
+      "swatchLab": {
+        "mean": [
+          44.88,
+          -30.6,
+          41.75
+        ],
+        "std": [
+          14.89,
+          9,
+          12.37
+        ],
+        "n": 9478
+      }
+    },
+    {
+      "id": "sierra-blend-pro",
+      "name": "Sierra Blend Pro",
+      "sku": "SIERRA-BLEND-PRO",
+      "series": "Sierra Blend",
+      "uses": [
+        "landscape"
+      ],
+      "categories": [
+        "Sierra Blend Series"
+      ],
+      "tagline": "Sierra Blend Pro boasts a unique blend of spring and emerald green Wave shaped yarn blades that deliver a hybrid appearance of rich dark and brightly saturated greens. Mixed with the brown and green thatch, the Sierra Blend Series stands out as one of the most dynamically authentic artificial turf products on the market.",
+      "specs": {
+        "pileHeightIn": 1.75,
+        "faceWeightOz": 75.0,
+        "totalWeightOz": 102.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Spring/Emerald",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/4\u201d",
+        "Face Weight": "75 oz",
+        "Total Weight": "102 oz",
+        "Yarn Color": "Spring/Emerald",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology\u2013Yarn shape increases airflow and lowers surface temperature",
+        "The Wave shape blend blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/803d6086edfb6a99.jpg",
+        "/img/vendor/2b4822dd80df888e.jpg",
+        "/img/vendor/ec804bef6f456613.jpg",
+        "/img/vendor/8cd03f4170437347.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Sierra-Blend-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Sierra-Blend-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/sierra-blend-pro/",
+      "swatchLab": {
+        "mean": [
+          41.09,
+          -30.32,
+          39.01
+        ],
+        "std": [
+          13.78,
+          8.85,
+          10.64
+        ],
+        "n": 10721
+      }
+    },
+    {
+      "id": "th-pet",
+      "name": "TH Pet",
+      "sku": "TH-PET",
+      "series": "Builder",
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Pet is inspired by our dedicated builders and contractors, the Turfhub value engineered Builder Series was designed to include all the features you\u2019ve come to love at an unbeatable value. We have put extreme care into crafting the most value driven line-up Turfhub has ever offered. Our most realistic yarn designs with our industry leading draining technology makes this series a huge hit with ou",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Spined C",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Spined C"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/e2297123c90640bd.jpg",
+        "/img/vendor/ff64eaf83f09a4d8.jpg",
+        "/img/vendor/ee350fe73b1cfc4b.jpg",
+        "/img/vendor/67eba38f8fa81de0.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-TH-Pet-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TH-Pet-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/th-pet/",
+      "swatchLab": {
+        "mean": [
+          50.67,
+          -19.49,
+          32.66
+        ],
+        "std": [
+          11.39,
+          3.95,
+          5.37
+        ],
+        "n": 9523
+      }
+    },
+    {
+      "id": "all-play-white",
+      "name": "All Play White",
+      "sku": "ALL-PLAY-WHITE",
+      "series": null,
+      "uses": [
+        "pet",
+        "sport",
+        "play"
+      ],
+      "categories": [
+        "Pet Grass",
+        "Sport Turf"
+      ],
+      "tagline": "All Play White is the perfect turf to match up to any short multipurpose turf that needs white lines. It also works great as an added aesthetic bunker incorporated into your putting green designs to take your greens to the next level.",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 82.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "White XP",
+        "thatchColor": "White",
+        "bladeShape": "XP with Thatch",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "82 oz",
+        "Yarn Color": "White XP",
+        "Thatch Color": "White",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "XP with Thatch"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/69961a19ebf6ab89.jpg",
+        "/img/vendor/c05751ec89aa1399.jpg",
+        "/img/vendor/5b1547b5ab443937.jpg",
+        "/img/vendor/bf9842615d230618.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-All-Play-White-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/All-Play-White-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/all-play-white/",
+      "swatchLab": null
+    },
+    {
+      "id": "th-flo",
+      "name": "TH Flo",
+      "sku": "TH-FLO",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "TH Flo is engineered with safety fi rst meaning that it is free of harmful chemicals and toxic materials. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches ",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 80.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Spring/Lt. Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Clear Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "80 oz",
+        "Yarn Color": "Spring/Lt. Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "Clear Permeable",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/c1934a640423e53e.jpg",
+        "/img/vendor/f8172125b03cfad1.jpg",
+        "/img/vendor/c77699869c2fa99c.jpg",
+        "/img/vendor/a1f872ee0aa506dc.jpg"
+      ],
+      "specSheet": "/wp-content/uploads/2026/02/TurfHub-TH-Flo-2026.pdf",
+      "cadDetail": "/wp-content/uploads/2025/07/Pet-Flo-USA-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/th-flo/",
+      "swatchLab": {
+        "mean": [
+          36.54,
+          -18.07,
+          31.06
+        ],
+        "std": [
+          11.47,
+          3.93,
+          6.4
+        ],
+        "n": 10223
+      }
+    },
+    {
+      "id": "mohave-pet",
+      "name": "Mohave Pet",
+      "sku": "PET-FLO-1-1",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Mohave Pet was designed with pet and play usage in mind. It features a soft to the touch, Mini Wave shaped yarn blade with field green and apple green tones. For safety and sanitation, we have paired our \u201cPro Flo\u201d fully permeable backing system with Antimicrobial and Antistatic yarn additives making Malibu Pet a great option for those looking for the ultimate backyard turf.",
+      "specs": {
+        "pileHeightIn": 1.125,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 87.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "87 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D Wave blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/76f6f548824db0db.jpg",
+        "/img/vendor/f6fbd29509e64fc8.jpg",
+        "/img/vendor/dab724568739e8eb.jpg",
+        "/img/vendor/df713a38ed6669ab.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Mohave-Pet-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Mohave-Pet-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/mohave-pet/",
+      "swatchLab": {
+        "mean": [
+          44.43,
+          -27.27,
+          35.22
+        ],
+        "std": [
+          9.58,
+          5.11,
+          5.93
+        ],
+        "n": 10964
+      }
+    },
+    {
+      "id": "pet-flo-usa",
+      "name": "Pet Flo USA",
+      "sku": "PET-FLO-USA",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Pet Flo is engineered with safety first. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches and patchy bare spots but also most importantly keeps it smelling",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 80.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Spring/Lt. Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Clear Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "80 oz",
+        "Yarn Color": "Spring/Lt. Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "Clear Permeable",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo",
+        "Made in USA"
+      ],
+      "images": [
+        "/img/vendor/d4c9bac42466d804.jpg",
+        "/img/vendor/9e67b57fb2a911ff.jpg",
+        "/img/vendor/982b074c98fea99b.jpg",
+        "/img/vendor/2f6bb5e91d43905d.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2026/02/TurfHub-Pet-Flo-USA-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pet-Flo-USA-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pet-flo-usa/",
+      "swatchLab": {
+        "mean": [
+          38.29,
+          -20.41,
+          26.67
+        ],
+        "std": [
+          11.47,
+          4.1,
+          5.58
+        ],
+        "n": 9189
+      }
+    },
+    {
+      "id": "pet-select",
+      "name": "Pet Select",
+      "sku": "PET-SELECT",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Pet Select is engineered with safety first. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches and patchy bare spots but also most importantly keeps it smell",
+      "specs": {
+        "pileHeightIn": 1.0,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 80.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive/Olive",
+        "thatchColor": "FG/Jute",
+        "bladeShape": "C with Spine",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Black Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 \u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "80 oz",
+        "Yarn Color": "Field/Olive/Olive",
+        "Thatch Color": "FG/Jute",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "Black Permeable",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "C with Spine"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/dedd7abc33cb0db6.jpg",
+        "/img/vendor/405eb0e6d4db9882.jpg",
+        "/img/vendor/7a974082d43e4878.jpg",
+        "/img/vendor/2e949acdd4aec765.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pet-Select-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pet-Select-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pet-select/",
+      "swatchLab": {
+        "mean": [
+          52.48,
+          -18.9,
+          33.99
+        ],
+        "std": [
+          8.84,
+          3.18,
+          4.69
+        ],
+        "n": 9969
+      }
+    },
+    {
+      "id": "pet-pro",
+      "name": "Pet Pro",
+      "sku": "PET-PRO",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Pet Pro is engineered with safety first. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches and patchy bare spots but also most importantly keeps it smelling",
+      "specs": {
+        "pileHeightIn": 1.125,
+        "faceWeightOz": 65.0,
+        "totalWeightOz": 85.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "C with Spine",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Clear Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/8\u201d",
+        "Face Weight": "65 oz",
+        "Total Weight": "85 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "Clear Permeable",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "C with Spine"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/8eb548ca3aa61486.jpg",
+        "/img/vendor/66ca3d086ded53a0.jpg",
+        "/img/vendor/fe53e7c7a1d4e9f1.jpg",
+        "/img/vendor/b7ccf994e9b45fb7.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pet-Pro-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pet-Pro-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pet-pro/",
+      "swatchLab": {
+        "mean": [
+          50.97,
+          -22.9,
+          29.14
+        ],
+        "std": [
+          11.05,
+          4.25,
+          5.96
+        ],
+        "n": 9350
+      }
+    },
+    {
+      "id": "all-play-usa",
+      "name": "All Play USA",
+      "sku": "ALL-PLAY-USA",
+      "series": null,
+      "uses": [
+        "pet",
+        "sport",
+        "play"
+      ],
+      "categories": [
+        "Pet Grass",
+        "Sport Turf"
+      ],
+      "tagline": "All Play USA is designed with safety and durability in mind, making it the ideal choice for commercial applications, playgrounds, or any other high traffic area. The classic spined S face yarn paired with an Olive / Dark Green thatch not only looks realistic, it features Anti Static and Anti Microbial additives built into the yarn construction. This will keep your turf smelling fresh and free of s",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 65.0,
+        "totalWeightOz": 92.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "DK Green / Olive",
+        "bladeShape": "Classic Spine",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "65 oz",
+        "Total Weight": "92 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "DK Green / Olive",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Classic Spine"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Charge Guard \u2013Electro Conductive yarn fi ber has grounding properties which reduces static discharge.",
+        "Anti microbial additive \u2013enhances protection against harmful bacteria.",
+        "Unique shape blade design deflects light reduces sheen",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo",
+        "Made in USA"
+      ],
+      "images": [
+        "/img/vendor/9c9bdf217a0a893e.jpg",
+        "/img/vendor/5703d567a057125e.jpg",
+        "/img/vendor/4f4b0c14ae9d9bea.jpg",
+        "/img/vendor/718c73c387c2e2ef.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-All-Play-USA-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/All-Play-USA-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/all-play-usa/",
+      "swatchLab": {
+        "mean": [
+          39.21,
+          -30.84,
+          37.96
+        ],
+        "std": [
+          12.68,
+          6.45,
+          9.03
+        ],
+        "n": 9775
+      }
+    },
+    {
+      "id": "malibu-pet",
+      "name": "Malibu Pet",
+      "sku": "PET-FLO-1",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Malibu Pet was designed with pet and play usage in mind. It features a soft to the touch, Mini Wave shaped yarn blade with field green and apple green tones. For safety and sanitation, we have paired our \u201cPro Flo\u201d fully permeable backing system with Antimicrobial and Antistatic yarn additives making Malibu Pet a great option for those looking for the ultimate backyard turf.",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 70.0,
+        "totalWeightOz": 90.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "DK Green/Olive",
+        "bladeShape": "Mini W",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Clear Permeable"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "70 oz",
+        "Total Weight": "90 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "DK Green/Olive",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "Clear Permeable",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mini W"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "ProFlo Technology\u2013Fully permeable backing drains 100 + inches per hour",
+        "Antimicrobial Yarn System",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo",
+        "Pet System"
+      ],
+      "images": [
+        "/img/vendor/76f6f548824db0db.jpg",
+        "/img/vendor/f6fbd29509e64fc8.jpg",
+        "/img/vendor/dab724568739e8eb.jpg",
+        "/img/vendor/df713a38ed6669ab.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Malibu-Pet-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Malibu-Pet-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/malibu-pet/",
+      "swatchLab": {
+        "mean": [
+          44.43,
+          -27.27,
+          35.22
+        ],
+        "std": [
+          9.58,
+          5.11,
+          5.93
+        ],
+        "n": 10964
+      }
+    },
+    {
+      "id": "all-play",
+      "name": "All Play",
+      "sku": "ALL-PLAY",
+      "series": null,
+      "uses": [
+        "pet",
+        "sport",
+        "play"
+      ],
+      "categories": [
+        "Pet Grass",
+        "Sport Turf"
+      ],
+      "tagline": "All Play is engineered with safety first. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches and patchy bare spots but also most importantly keeps it smellin",
+      "specs": {
+        "pileHeightIn": 1.125,
+        "faceWeightOz": 78.0,
+        "totalWeightOz": 105.0,
+        "drainRateInPerHr": 28.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Olive",
+        "thatchColor": "Green",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "rollWidth": "15\u2019 feet",
+        "infill": "1-2 lbs"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/8\u201d",
+        "Face Weight": "78 oz",
+        "Total Weight": "105 oz",
+        "Yarn Color": "Field/Olive",
+        "Thatch Color": "Green",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Thatch Material": "Texturize PE",
+        "Primary Backing Material": "7oz Dual Layered Non-expansive",
+        "Secondary Coating Material": "20oz Polyurethane",
+        "Tuft Bind": ">10 lbs.",
+        "Machine Gauge": "3/8\u201d",
+        "Infill Ratio": "1-2 lbs",
+        "Roll Width": "15\u2019 feet",
+        "Drain Rate": ">28 inch per hour",
+        "Warranty": "15 year",
+        "Recommended Use": "Moderate to High Traffic"
+      },
+      "features": [
+        "CoolFlo Technology \u2013 Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D Wide Wave blade design deflects light",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/c8125980b1b462ac.jpg",
+        "/img/vendor/e88e21156a32dbf0.jpg",
+        "/img/vendor/503479af2b0eefed.jpg",
+        "/img/vendor/6ea8c13371d9621c.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/12/All-Play.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/10/All-Play-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/all-play/",
+      "swatchLab": {
+        "mean": [
+          39.19,
+          -23.79,
+          31.67
+        ],
+        "std": [
+          12.22,
+          4.72,
+          7.08
+        ],
+        "n": 9206
+      }
+    },
+    {
+      "id": "pet",
+      "name": "Pet Turf",
+      "sku": "PET-TURF",
+      "series": null,
+      "uses": [
+        "pet"
+      ],
+      "categories": [
+        "Pet Grass"
+      ],
+      "tagline": "Pet Turf is engineered with safety first. Because you care about your pets, we have put extreme care into crafting the longest lasting, most realistic turf that your furry friend could ever dream of. Our revolutionary draining technology makes this series extremely low maintenance, keeping your yard not only free of yellowing patches and patchy bare spots but also most importantly keeps it smellin",
+      "specs": {
+        "pileHeightIn": 1.125,
+        "faceWeightOz": 78.0,
+        "totalWeightOz": 105.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "3D Wide Wave",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/8\u201d",
+        "Face Weight": "78 oz",
+        "Total Weight": "105 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "3D Wide Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Unique 3D Wide Wave Shape blades",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/3b55270c3d01ac2d.jpg",
+        "/img/vendor/91e0ecd12dd27685.jpg",
+        "/img/vendor/de44a61fbb3b898a.jpg",
+        "/img/vendor/425feabd8991ec65.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pet-Turf-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pet-Turf-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pet/",
+      "swatchLab": {
+        "mean": [
+          41.7,
+          -28.2,
+          37.7
+        ],
+        "std": [
+          13.17,
+          7.21,
+          10.06
+        ],
+        "n": 9975
+      }
+    },
+    {
+      "id": "th-spring",
+      "name": "TH Spring",
+      "sku": "TH-SPRING",
+      "series": "Builder",
+      "uses": [
+        "play"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Spring is inspired by our dedicated builders and contractors, the Turfhub value engineered Builder Series was designed to include all the features you\u2019ve come to love at an unbeatable value. We have put extreme care into crafting the most value driven line- up Turfhub has ever offered. Our realistic Field Green / Spring Green yarn colors along with our industry leading technology makes this ser",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 82.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Spring",
+        "thatchColor": "Tan/Green",
+        "bladeShape": "C Shape",
+        "yarn": "PE Monofillament",
+        "stitchGauge": "3/8",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "82 oz",
+        "Stitch Gauge": "3/8",
+        "Yarn Color": "Field/Spring",
+        "Thatch Color": "Tan/Green",
+        "Face Composition": "PE Monofillament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "30+",
+        "Warranty": "15 YR",
+        "Blade Shape": "C Shape"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/959d87cf4f0b7ed7.jpg",
+        "/img/vendor/33404404fe93dd2c.jpg",
+        "/img/vendor/55cf2b43742efcde.jpg",
+        "/img/vendor/9aeda055038b682c.jpg"
+      ],
+      "specSheet": "/wp-content/uploads/2026/05/TurfHub-TH-Spring-2026-2.pdf",
+      "cadDetail": "/wp-content/uploads/2026/05/TH-Spring-CAD-Install-2026-2.pdf",
+      "source": "https://turfhub.com/product/th-spring/",
+      "swatchLab": {
+        "mean": [
+          45.91,
+          -21.94,
+          30.22
+        ],
+        "std": [
+          10.89,
+          5.83,
+          6.05
+        ],
+        "n": 7956
+      }
+    },
+    {
+      "id": "th-play",
+      "name": "TH Play",
+      "sku": "TH-PLAY",
+      "series": "Builder",
+      "uses": [
+        "play"
+      ],
+      "categories": [
+        "Builder Series"
+      ],
+      "tagline": "TH Play is inspired by our dedicated builders and contractors, the Turfhub value engineered Builder Series was designed to include all the features you\u2019ve come to love at an unbeatable value. We have put extreme care into crafting the most value driven line-up Turfhub has ever offered. Our most realistic yarn designs with our industry leading draining technology makes this series a huge hit with o",
+      "specs": {
+        "pileHeightIn": 1.25,
+        "faceWeightOz": 70.0,
+        "totalWeightOz": 97.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Green",
+        "bladeShape": "Wave",
+        "yarn": "PE Monofi lament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/4\u201d",
+        "Face Weight": "70 oz",
+        "Total Weight": "97 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Green",
+        "Face Composition": "PE Monofi lament",
+        "Thatch Material": "Texturize PP",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Wave"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/6dbcaba05cefe901.jpg",
+        "/img/vendor/4738878107859bbe.jpg",
+        "/img/vendor/939aeee78846197f.jpg",
+        "/img/vendor/bff3bc93a81e437e.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-TH-Play-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TH-Play-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/th-play/",
+      "swatchLab": {
+        "mean": [
+          48.67,
+          -24.3,
+          37.02
+        ],
+        "std": [
+          11.25,
+          3.66,
+          6.06
+        ],
+        "n": 9952
+      }
+    },
+    {
+      "id": "pacific-safe-play",
+      "name": "Pacific Safe Play",
+      "sku": "PACIFIC-SAFE-PLAY",
+      "series": "Pacific Blend",
+      "uses": [
+        "play"
+      ],
+      "categories": [
+        "Pacific Blend Series"
+      ],
+      "tagline": "Pacific Safe Play was designed with your children\u2019s safety in mind. This turf is both remarkably comfortable to the touch and stoically retains its shape after footfall. It\u2019s soft yet durable, making it the best of both worlds. This extra stability and deluxe texture is accredited to its very diverse shape. In addition to the aforementioned benefits, the 5mm foam pad acts as a cushion, being bonde",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 147.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Dull Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "3D W and 3D N",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d",
+        "backing": "5 MM Foam"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "147 oz",
+        "Yarn Color": "Field/Dull Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "5 MM Foam",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "3D W and 3D N"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "5mm padding for protection",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/a6cd765c388c67e0.jpg",
+        "/img/vendor/adfdaec707ae50c0.jpg",
+        "/img/vendor/44d53e74accfc358.jpg",
+        "/img/vendor/e8f6e8c2a91cf0bf.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pacific-Safe-Play-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pacific-Safe-Play-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pacific-safe-play/",
+      "swatchLab": {
+        "mean": [
+          35.26,
+          -27.52,
+          33.32
+        ],
+        "std": [
+          15.82,
+          8.31,
+          8.99
+        ],
+        "n": 8894
+      }
+    },
+    {
+      "id": "pacific-play",
+      "name": "Pacific Play",
+      "sku": "PACIFIC-PLAY",
+      "series": "Pacific Blend",
+      "uses": [
+        "play"
+      ],
+      "categories": [
+        "Pacific Blend Series"
+      ],
+      "tagline": "Pacific Play is designed to replicate the resilient power and vibrant coastal green of the turf found on the Pacific coastline. This effect is achieved through the 3D Wave shaped two tone blend of field and olive yarn that are soft to the touch yet extremely durable underfoot, making the Pacific Series a top choice for home yardscapes.",
+      "specs": {
+        "pileHeightIn": 1.375,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 80.0,
+        "drainRateInPerHr": 100.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field/Apple",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mattex Omega",
+        "yarn": "PE Monofilament",
+        "stitchGauge": "3/8\u201d"
+      },
+      "specsRaw": {
+        "Pile Height": "1 3/8\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "80 oz",
+        "Yarn Color": "Field/Apple",
+        "Thatch Color": "Brown/Green",
+        "Yarn Material": "PE Monofilament",
+        "Thatch Material": "Texturized PP",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "100+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "Mattex Omega"
+      },
+      "features": [
+        "CoolFlo Technology \u2013Yarn shape increases airflow and lowers surface temperature",
+        "ProFlo Technology\u2013Fully permeable backing drains 100 + inches per hour",
+        "Unique Omega blade design deflects light reduces sheen",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [
+        "CoolFlo"
+      ],
+      "images": [
+        "/img/vendor/c05d33fb7a192284.jpg",
+        "/img/vendor/60d164fc98cc5b1a.jpg",
+        "/img/vendor/6df92670379f068d.jpg",
+        "/img/vendor/650cb7b37b527b27.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Pacific-Play-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pacific-Play-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/pacific-play/",
+      "swatchLab": {
+        "mean": [
+          37.52,
+          -27.96,
+          36.17
+        ],
+        "std": [
+          13.62,
+          8.03,
+          9.66
+        ],
+        "n": 10308
+      }
+    },
+    {
+      "id": "bunker-turf",
+      "name": "Bunker Turf",
+      "sku": "BUNKER-TURF",
+      "series": null,
+      "uses": [
+        "putting",
+        "sport"
+      ],
+      "categories": [
+        "Putting Greens",
+        "Sport Turf"
+      ],
+      "tagline": "Bunker Turf is the premium bunker turf product. This product looks and feels like a real sand trap. This product can be installed indoors or outdoors on concrete or a compacted aggregate base.",
+      "specs": {
+        "pileHeightIn": 1.0,
+        "faceWeightOz": 36.0,
+        "totalWeightOz": 63.0,
+        "drainRateInPerHr": 30.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Sand",
+        "thatchColor": "N/A",
+        "bladeShape": "TXT Poly",
+        "yarn": "Texturized PP",
+        "stitchGauge": "3/8\u201d",
+        "backing": "Silver Back Polyurethane"
+      },
+      "specsRaw": {
+        "Pile Height": "1\u201d",
+        "Face Weight": "36 oz",
+        "Total Weight": "63 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Sand",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized PP",
+        "Thatch Material": "N/A",
+        "Primary Backing": "Silver Back Polyurethane",
+        "Drain Rate": "30+ inches per hour",
+        "Warranty": "15 year",
+        "Blade Shape": "TXT Poly"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Natural Rubber backing allows for a smoother install"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/c04e39426862b57b.jpg",
+        "/img/vendor/5bc21e88b79bbf94.jpg",
+        "/img/vendor/362e1cfd8dd0dbca.jpg",
+        "/img/vendor/7459df1ff09e5956.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Bunker-Turf-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Heatguard-Blend-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/bunker-turf/",
+      "swatchLab": null
+    },
+    {
+      "id": "performance-pro",
+      "name": "Performance Pro",
+      "sku": "PERFORMANCE-PRO",
+      "series": null,
+      "uses": [
+        "putting",
+        "sport"
+      ],
+      "categories": [
+        "Putting Greens",
+        "Sport Turf"
+      ],
+      "tagline": "Performance Pro Performance Pro is the ultimate product for high traffic areas such as indoor agility and training facilities. It is manufactured by bonding a 5mm polyurethane foam padding to a 36 oz texturized poly yarn to produce the most durable product on the market. It will make a great addition to elevate your home or commercial gym.",
+      "specs": {
+        "pileHeightIn": 0.562,
+        "faceWeightOz": 36.0,
+        "totalWeightOz": 121.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Pine Green",
+        "thatchColor": "N/A",
+        "bladeShape": "PP Texturized",
+        "yarn": "Texturized PP",
+        "stitchGauge": "3/8\u201d",
+        "backing": "5 MM Foam"
+      },
+      "specsRaw": {
+        "Pile Height": "9/16\u201d",
+        "Face Weight": "36 oz",
+        "Total Weight": "121 oz",
+        "Yarn Color": "Pine Green",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized PP",
+        "Thatch Material": "N/A",
+        "Primary Backing": "5 MM Foam",
+        "Stitch Gauge": "3/8\u201d",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "PP Texturized"
+      },
+      "features": [
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "5mm foam for added softness & fall protection"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/cd98fcb6b8369eea.jpg",
+        "/img/vendor/b56ce6fca1c79996.jpg",
+        "/img/vendor/16fc44f8213ab5d8.jpg",
+        "/img/vendor/d1aa40d4ee668fe5.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Performance-Pro-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Performance-Pro-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/performance-pro/",
+      "swatchLab": {
+        "mean": [
+          49.26,
+          -23.12,
+          43.36
+        ],
+        "std": [
+          8.49,
+          3.53,
+          6.73
+        ],
+        "n": 8588
+      }
+    },
+    {
+      "id": "tour-platinum-natural",
+      "name": "Tour Platinum Natural",
+      "sku": "TOUR-PLATINUM-NATURAL",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Platinum Natural is designed to give you a true roll just like a natural country club green. The texturized nylon yarn and natural rubber backing make this turf extremely durable and delivers superior performance. Your backyard will become Augusta National with this putting green.",
+      "specs": {
+        "pileHeightIn": 0.375,
+        "faceWeightOz": 40.0,
+        "totalWeightOz": 82.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Viridian/ Field/ Tan",
+        "thatchColor": "N/A",
+        "bladeShape": "Lux Lawn TXT Nylon",
+        "yarn": "Texturized Nylon",
+        "stitchGauge": "3/16\u201d",
+        "backing": "White Natural Rubber Action Back"
+      },
+      "specsRaw": {
+        "Pile Height": "3/8\u201d",
+        "Face Weight": "40 oz",
+        "Total Weight": "82 oz",
+        "Stitch Gauge": "3/16\u201d",
+        "Yarn Color": "Viridian/ Field/ Tan",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized Nylon",
+        "Thatch Material": "N/A",
+        "Primary Backing": "White Natural Rubber Action Back",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "Lux Lawn TXT Nylon"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Natural Rubber backing allows for a smoother install"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/920d1c5540e00243.jpg",
+        "/img/vendor/b0942d0050f59827.jpg",
+        "/img/vendor/8e4b1670014c9a6a.jpg",
+        "/img/vendor/83fd06372dac0a97.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-Platinum-Natural-2025-1.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Platinum-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/tour-platinum-natural/",
+      "swatchLab": {
+        "mean": [
+          54.1,
+          -15.35,
+          32.22
+        ],
+        "std": [
+          7.33,
+          3.71,
+          4.79
+        ],
+        "n": 6052
+      }
+    },
+    {
+      "id": "tour-select",
+      "name": "Tour Select",
+      "sku": "TOUR-SELECT",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Select is the ultimate slit film putting green surface. This industry standard has been used for years to replicate a true golf course green. The tall pile height makes for a seamless install, allowing for more silica infill to control the ball\u2019s roll speed.",
+      "specs": {
+        "pileHeightIn": 1.125,
+        "faceWeightOz": 40.0,
+        "totalWeightOz": 82.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Emerald/ FG",
+        "thatchColor": "N/A",
+        "bladeShape": "Poly Slit Film",
+        "yarn": "PE Slit Film",
+        "stitchGauge": "3/8\u201d",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1 1/8\u201d",
+        "Face Weight": "40 oz",
+        "Total Weight": "82 oz",
+        "Stitch Gauge": "3/8\u201d",
+        "Yarn Color": "Emerald/ FG",
+        "Thatch Color": "N/A",
+        "Face Composition": "PE Slit Film",
+        "Thatch Material": "N/A",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "Poly Slit Film"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Tall pile height allows for more infill"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/904120d1401e5114.jpg",
+        "/img/vendor/18fe10cd0be64555.jpg",
+        "/img/vendor/16cedbccad29cef3.jpg",
+        "/img/vendor/53a79db54455a62e.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-Select-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Select-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/tour-select/",
+      "swatchLab": {
+        "mean": [
+          40.51,
+          -35.07,
+          41.36
+        ],
+        "std": [
+          12.45,
+          7.13,
+          9.62
+        ],
+        "n": 8352
+      }
+    },
+    {
+      "id": "tour-platinum",
+      "name": "Tour Platinum",
+      "sku": "TOUR-PLATINUM",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Platinum is designed to give you a true roll just like a natural country club green. The texturized nylon yarn and natural rubber backing make this turf extremely durable and delivers superior performance. Your backyard will become Augusta National with this putting green.",
+      "specs": {
+        "pileHeightIn": 0.375,
+        "faceWeightOz": 40.0,
+        "totalWeightOz": 82.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Emerald / FG",
+        "thatchColor": "N/A",
+        "bladeShape": "Lux Lawn TXT Nylon",
+        "yarn": "Texturized Nylon",
+        "stitchGauge": "3/16\u201d",
+        "backing": "White Natural Rubber Action Back"
+      },
+      "specsRaw": {
+        "Pile Height": "3/8\u201d",
+        "Face Weight": "40 oz",
+        "Total Weight": "82 oz",
+        "Stitch Gauge": "3/16\u201d",
+        "Yarn Color": "Emerald / FG",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized Nylon",
+        "Thatch Material": "N/A",
+        "Primary Backing": "White Natural Rubber Action Back",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "Lux Lawn TXT Nylon"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Natural Rubber backing allows for a smoother install"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/3c5e9c0f2ad6f904.jpg",
+        "/img/vendor/1317c1866e3b82ec.jpg",
+        "/img/vendor/dfe64bff88768cb4.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-Platinum-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Platinum-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/tour-platinum/",
+      "swatchLab": {
+        "mean": [
+          50.68,
+          -22.22,
+          30.31
+        ],
+        "std": [
+          6.86,
+          3.82,
+          5.72
+        ],
+        "n": 8615
+      }
+    },
+    {
+      "id": "tour-pro",
+      "name": "Tour Pro",
+      "sku": "TOUR-PRO",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Pro is designed to give you the most realistic roll of your putts and allows you to elevate your golf game in the comfort of your own backyard. With the fresh colors of Emerald and Field green, your personal putting green will naturally stand out. Tour Pro is what the Pros use.",
+      "specs": {
+        "pileHeightIn": 0.5,
+        "faceWeightOz": 50.0,
+        "totalWeightOz": 77.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Emerald/Field",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "rollWidth": "15\u2019 feet",
+        "infill": "1-2 lbs"
+      },
+      "specsRaw": {
+        "Pile Height": "1/2\u201d",
+        "Face Weight": "50 oz",
+        "Total Weight": "77 oz",
+        "Yarn Color": "Emerald/Field",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Primary Backing Material": "7oz Dual Layered Non-expansive",
+        "Secondary Coating Material": "20oz Polyurethane",
+        "Tuft Bind": ">10 lbs.",
+        "Machine Gauge": "3/16\u201d",
+        "Infill Ratio": "1-2 lbs",
+        "Roll Width": "15\u2019 feet",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "Heat and frost resistant",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Soft fiber adds a natural comfortable feel",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/5438fe946d55b2bd.jpg",
+        "/img/vendor/145f063c51ffa4c2.jpg",
+        "/img/vendor/881d2d6d14badc8c.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2021/01/TurfHub-Tour-Pro-2020.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2020/12/Tour-Pro-CAD-Install-2020.pdf",
+      "source": "https://turfhub.com/product/tour-pro/",
+      "swatchLab": {
+        "mean": [
+          45.79,
+          -33.95,
+          42.27
+        ],
+        "std": [
+          9.44,
+          4.99,
+          7.92
+        ],
+        "n": 10043
+      }
+    },
+    {
+      "id": "tour-elite",
+      "name": "Tour Elite",
+      "sku": "TOUR-ELITE",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Elite is designed to give you the most realistic roll of your putts and allows you to elevate your golf game in the comfort of your own backyard. With the fresh colors of Viridian and Field, your personal putting green will naturally stand out. Tour Elite is above all the others. Tour Elite is available in both natural rubber and polyurethane backing.",
+      "specs": {
+        "pileHeightIn": 0.625,
+        "faceWeightOz": 52.0,
+        "totalWeightOz": 80.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Viridian / Sport Green",
+        "thatchColor": "N/A",
+        "bladeShape": "PP Texturized",
+        "yarn": "Texturized PP",
+        "stitchGauge": "3/16\u201d",
+        "backing": "White Natural Rubber Action Back"
+      },
+      "specsRaw": {
+        "Pile Height": "5/8\u201d",
+        "Face Weight": "52 oz",
+        "Total Weight": "80 oz",
+        "Stitch Gauge": "3/16\u201d",
+        "Yarn Color": "Viridian / Sport Green",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized PP",
+        "Thatch Material": "N/A",
+        "Primary Backing": "White Natural Rubber Action Back",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "PP Texturized"
+      },
+      "features": [
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/6117a3528df0b744.jpg",
+        "/img/vendor/f3bb82045cf96064.jpg",
+        "/img/vendor/baa78a8011b997c2.jpg",
+        "/img/vendor/ac727bb2ee2642a5.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-Elite-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Elite-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/tour-elite/",
+      "swatchLab": {
+        "mean": [
+          38.06,
+          -22.78,
+          34.72
+        ],
+        "std": [
+          10.31,
+          4.81,
+          7.36
+        ],
+        "n": 8277
+      }
+    },
+    {
+      "id": "tour-elite-xl",
+      "name": "Tour Elite XL",
+      "sku": "TOUR-ELITE-XL",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Elite XL putting green is designed to deliver the ultimate golf experience in your back yard. The taller pile height allows for more infill to be used giving precise roll while receiving pitches and chip shots just like the greens of your favorite golf course. The taller pile height makes hiding seams easier than other putting surfaces. Tour Elite is above all the others.",
+      "specs": {
+        "pileHeightIn": 1.0,
+        "faceWeightOz": 55.0,
+        "totalWeightOz": 92.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Viridian/ Sport Green",
+        "yarn": "Texturized Polypropylene (PP)",
+        "stitchGauge": "3/16\u2033"
+      },
+      "specsRaw": {
+        "Pile Height": "1\u201d",
+        "Face Weight": "55 oz",
+        "Total Weight": "92 oz",
+        "Yarn Color": "Viridian/ Sport Green",
+        "Yarn Material": "Texturized Polypropylene (PP)",
+        "Primary Backing Material": "27 oz 2 layer PU",
+        "Stitch Gauge": "3/16\u2033",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "Non-flammable, anti-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/6117a3528df0b744.jpg",
+        "/img/vendor/f3bb82045cf96064.jpg",
+        "/img/vendor/baa78a8011b997c2.jpg",
+        "/img/vendor/ac727bb2ee2642a5.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-XL-2024.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Elite-XL-CAD-Install-2024.pdf",
+      "source": "https://turfhub.com/product/tour-elite-xl/",
+      "swatchLab": {
+        "mean": [
+          38.06,
+          -22.78,
+          34.72
+        ],
+        "std": [
+          10.31,
+          4.81,
+          7.36
+        ],
+        "n": 8277
+      }
+    },
+    {
+      "id": "tour-tee",
+      "name": "Tour Tee",
+      "sku": "TOUR-TEE",
+      "series": null,
+      "uses": [
+        "putting"
+      ],
+      "categories": [
+        "Putting Greens"
+      ],
+      "tagline": "Tour Tee is designed for the true golfer in mind; whether you are looking to practice pitches, chips, full swings with irons, or hitting a driver, this product is ideal. It will provide you with a true tee-box feel without ever leaving your home. The 1-inch nylon pile height is designed to hold a traditional golf tee. Tour tee designed with the real golfer in mind.",
+      "specs": {
+        "pileHeightIn": 1.0,
+        "faceWeightOz": 110.0,
+        "totalWeightOz": 137.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Pine Green",
+        "thatchColor": "N/A",
+        "bladeShape": "Lux Lawn TXT Nylon",
+        "yarn": "Texturized Nylon",
+        "backing": "27 oz 2 layer PU"
+      },
+      "specsRaw": {
+        "Pile Height": "1\u201d",
+        "Face Weight": "110 oz",
+        "Total Weight": "137 oz",
+        "Yarn Color": "Pine Green",
+        "Thatch Color": "N/A",
+        "Face Composition": "Texturized Nylon",
+        "Thatch Material": "N/A",
+        "Primary Backing": "27 oz 2 layer PU",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "Lux Lawn TXT Nylon"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Natural Rubber backing allows for a smoother install"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/61413e3f2a8d8074.jpg",
+        "/img/vendor/aebb2044ea903e00.jpg",
+        "/img/vendor/a457dad58cec8fa0.jpg",
+        "/img/vendor/b140baf93d536d11.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Tour-Tee-1-Tone-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Tour-Tee-CAD-Install-2025.pdf",
+      "source": "https://turfhub.com/product/tour-tee/",
+      "swatchLab": {
+        "mean": [
+          45.36,
+          -23.66,
+          37.39
+        ],
+        "std": [
+          8.32,
+          3.24,
+          5.57
+        ],
+        "n": 9373
+      }
+    },
+    {
+      "id": "arena-pro",
+      "name": "Arena Pro",
+      "sku": "ARENA-PRO",
+      "series": "Pacific Blend",
+      "uses": [
+        "sport"
+      ],
+      "categories": [
+        "Pacific Blend Series"
+      ],
+      "tagline": "Arena Pro an almost perfect 50/50 blend of nylon and polyethylene, AT740 provides all of the advantages you\u2019ve come to expect from athletic turf, with exceptionally high wear and resistance performance. Designed to be used without rubber infill, AT740 is easier to maintain and up to 10% cooler than rubber-infilled turf. Create a portable system with the addition of 4\u201d or 8\u201d velcro.",
+      "specs": {
+        "pileHeightIn": 0.75,
+        "faceWeightOz": 38.0,
+        "totalWeightOz": 123.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Field / Olive",
+        "thatchColor": "Brown/Green",
+        "bladeShape": "Mono / Slit Film combo",
+        "yarn": "PE Mono / Slit Film",
+        "stitchGauge": "3/16\u201d",
+        "backing": "5 MM Foam"
+      },
+      "specsRaw": {
+        "Pile Height": "3/4\u201d",
+        "Face Weight": "38 oz",
+        "Total Weight": "123 oz",
+        "Stitch Gauge": "3/16\u201d",
+        "Yarn Color": "Field / Olive",
+        "Thatch Color": "Brown/Green",
+        "Face Composition": "PE Mono / Slit Film",
+        "Thatch Material": "Texturized PP",
+        "Primary Backing": "5 MM Foam",
+        "Drain Rate": "N/A",
+        "Warranty": "15 year",
+        "Blade Shape": "Mono / Slit Film combo"
+      },
+      "features": [
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Non-flammable, anti-acid yarn resistant to chemical attack",
+        "Natural Rubber backing allows for a smoother install"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/1ed7962a2d738857.jpg",
+        "/img/vendor/42a47361a0fe7b34.jpg",
+        "/img/vendor/1b2a28f65233c7a2.jpg",
+        "/img/vendor/ff619add93e4e644.jpg"
+      ],
+      "specSheet": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/TurfHub-Arena-Pro-2025.pdf",
+      "cadDetail": "https://live-turfhub.pantheonsite.io/wp-content/uploads/2025/07/Pacific-Safe-Play-CAD-Install-2025-1.pdf",
+      "source": "https://turfhub.com/product/arena-pro/",
+      "swatchLab": {
+        "mean": [
+          50.76,
+          -20.17,
+          29.86
+        ],
+        "std": [
+          10.9,
+          3.67,
+          5.03
+        ],
+        "n": 6499
+      }
+    },
+    {
+      "id": "color-turf",
+      "name": "Infield Turf",
+      "sku": "Infield-Turf-Chocolate",
+      "series": null,
+      "uses": [
+        "sport"
+      ],
+      "categories": [
+        "Sport Turf"
+      ],
+      "tagline": "Infield Turf is the most customizable turf in existence. This is the product that allows you to let your imagination lead the way. Gone are the days when turf is only one shade of green. If bluegrass is your thing, we can make that happen. Whatever color, whatever combination, we can make it happen.",
+      "specs": {
+        "pileHeightIn": 0.75,
+        "faceWeightOz": 60.0,
+        "totalWeightOz": 72.0,
+        "drainRateInPerHr": 28.0,
+        "warrantyYears": 15.0,
+        "yarnColor": "Spring/Field",
+        "yarn": "Monofilament Polyethylene (PE)",
+        "rollWidth": "15\u2019"
+      },
+      "specsRaw": {
+        "Pile Height": "3/4\u201d",
+        "Face Weight": "60 oz",
+        "Total Weight": "72 oz",
+        "Yarn Color": "Spring/Field",
+        "Yarn Material": "Monofilament Polyethylene (PE)",
+        "Backing Material": "27 oz Polyurethane",
+        "Machine Gauge": "3/8\u201d",
+        "Roll Width": "15\u2019",
+        "Drain Rate": "28 inch per hour",
+        "Shipping Weight": "750 lbs per roll (15 x 100)",
+        "Roll Diameter": "24 inches",
+        "Warranty": "15 year"
+      },
+      "features": [
+        "Heat and frost resistant",
+        "Durable yarn shape creates stronger fiber strength",
+        "UV stabilized yarns to resist fading from the sun",
+        "Soft fiber adds a natural comfortable feel",
+        "Non-flammable, ant-acid yarn resistant to chemical attack"
+      ],
+      "tech": [],
+      "images": [
+        "/img/vendor/67f9ade09ca637e9.jpg",
+        "/img/vendor/e503f32a84895572.jpg",
+        "/img/vendor/015fb034309ed9b3.jpg"
+      ],
+      "specSheet": null,
+      "cadDetail": null,
+      "source": "https://turfhub.com/product/color-turf/",
+      "swatchLab": null
+    }
+  ],
+  "accessories": [
+    {
+      "id": "soft-shot",
+      "name": "Soft Shot",
+      "categories": [
+        "Golf Accessories",
+        "Putting Greens"
+      ],
+      "url": "https://turfhub.com/product/soft-shot/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/12/SoftShot1.jpg"
+    },
+    {
+      "id": "ivy-coastal-blend",
+      "name": "Boxwood Ivy Coastal Blend",
+      "categories": [
+        "Wall Covering",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/ivy-coastal-blend/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/10/IvyLagunaBlend1Web-1.jpg"
+    },
+    {
+      "id": "ivy-pacific-blend",
+      "name": "Boxwood Ivy Pacific Blend",
+      "categories": [
+        "Wall Covering",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/ivy-pacific-blend/",
+      "image": "https://turfhub.com/wp-content/uploads/2025/07/pacific-ivy-a.jpg"
+    },
+    {
+      "id": "k9zap-quart",
+      "name": "K9Zap Quart",
+      "categories": [
+        "Turf Care",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/k9zap-quart/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/01/k9zap-1-c.jpeg"
+    },
+    {
+      "id": "k9zap-gallon",
+      "name": "K9Zap Gallon",
+      "categories": [
+        "Turf Care",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/k9zap-gallon/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/01/k9zap-1-b.jpeg"
+    },
+    {
+      "id": "k9zap",
+      "name": "K9Zap",
+      "categories": [
+        "Turf Care",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/k9zap/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/01/k9zap-1-a.jpeg"
+    },
+    {
+      "id": "weed-fabric",
+      "name": "Weed Fabric",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/weed-fabric/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/fabric-roll-6ft-b-1.jpg"
+    },
+    {
+      "id": "6-weed-fabric",
+      "name": "6\u2032 Weed Fabric",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/6-weed-fabric/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/fabric-roll-6ft-b-1.jpg"
+    },
+    {
+      "id": "4-weed-fabric",
+      "name": "4\u2032 Weed Fabric",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/4-weed-fabric/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/fabric-roll-4ft-b-1.jpg"
+    },
+    {
+      "id": "flagsticks",
+      "name": "Flagsticks",
+      "categories": [
+        "Accessories",
+        "Golf Accessories"
+      ],
+      "url": "https://turfhub.com/product/flagsticks/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/flag-pole-1-a-1.jpg"
+    },
+    {
+      "id": "black-white-flagstick",
+      "name": "Black & White Flagstick",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/black-white-flagstick/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/flag-pole-2-a-1.jpg"
+    },
+    {
+      "id": "white-flagstick",
+      "name": "White Flagstick",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/white-flagstick/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/flag-pole-1-a-1.jpg"
+    },
+    {
+      "id": "golf-cups",
+      "name": "Golf Cups",
+      "categories": [
+        "Accessories",
+        "Golf Accessories"
+      ],
+      "url": "https://turfhub.com/product/golf-cups/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/4-inch-metal-cup-b-name.jpg"
+    },
+    {
+      "id": "6-plastic-cup",
+      "name": "6\u2033 Plastic Cup",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/6-plastic-cup/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/6-inch-plastic-cup-b-1.jpg"
+    },
+    {
+      "id": "4-plastic-cup",
+      "name": "4\u2033 Plastic Cup",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/4-plastic-cup/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/4-inch-plastic-cup-b-1.jpg"
+    },
+    {
+      "id": "6-aluminum-cup",
+      "name": "6\u2033 Aluminum Cup",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/6-aluminum-cup/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/6-inch-metal-cup-b-1.jpg"
+    },
+    {
+      "id": "4-aluminum-cup",
+      "name": "4\u2033 Aluminum Cup",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/4-aluminum-cup/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/4-inch-metal-cup-b-1.jpg"
+    },
+    {
+      "id": "checkered-green-white",
+      "name": "Checkered Green & White Flag",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/checkered-green-white/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/green-flag-a-1.jpg"
+    },
+    {
+      "id": "checkered-black-white",
+      "name": "Checkered Black & White Flag",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/checkered-black-white/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/bw-flag-a-1.jpg"
+    },
+    {
+      "id": "flags",
+      "name": "Golf Flags",
+      "categories": [
+        "Accessories",
+        "Golf Accessories"
+      ],
+      "url": "https://turfhub.com/product/flags/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/green-flag-a-1.jpg"
+    },
+    {
+      "id": "black-flag",
+      "name": "Black Flag",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/black-flag/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/black-flag-a-1.jpg"
+    },
+    {
+      "id": "white-flag",
+      "name": "White Flag",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/white-flag/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/white-flag-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-50-lbs-finish",
+      "name": "Install Nails 3 1/2\u2033 (50 lbs) Finish",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-50-lbs-finish/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/small-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-25-lbs-finish",
+      "name": "Install Nails 3 1/2\u2033 (25 lbs) Finish",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-25-lbs-finish/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/small-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-12-5-lbs-finish",
+      "name": "Install Nails 3 1/2\u2033 (12.5 lbs) Finish",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-12-5-lbs-finish/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/small-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-finish",
+      "name": "Install Nails 3 1/2\u2033 Finish",
+      "categories": [
+        "Accessories",
+        "Install Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-finish/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/small-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2",
+      "name": "Install Nails 3 1/2\u2033",
+      "categories": [
+        "Accessories",
+        "Install Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/medium-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-50-lbs",
+      "name": "Install Nails 3 1/2\u2033 (50 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-50-lbs/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/medium-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-25-lbs",
+      "name": "Install Nails 3 1/2\u2033 (25 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-25-lbs/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/medium-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-3-1-2-12-5-lbs",
+      "name": "Install Nails 3 1/2\u2033 (12.5 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-3-1-2-12-5-lbs/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/medium-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-5-50-lbs",
+      "name": "Install Nails 5\u2033 (50 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-5-50-lbs/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/large-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-5-25-lbs",
+      "name": "Install Nails 5\u2033 (25 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-5-25-lbs/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/large-nails-a-1.jpg"
+    },
+    {
+      "id": "install-nails-5-12-5-lb",
+      "name": "Install Nails 5\u2033 (12.5 lbs)",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-5-12-5-lb/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/large-nails-a-1.jpg"
+    },
+    {
+      "id": "premium-silica",
+      "name": "Premium Silica",
+      "categories": [
+        "Accessories",
+        "Sand / Infill"
+      ],
+      "url": "https://turfhub.com/product/premium-silica/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/premium-silica-12-20-a.jpg"
+    },
+    {
+      "id": "premium-silica-12-20",
+      "name": "Premium Silica (12/20) Large Grit",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/premium-silica-12-20/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/premium-silica-12-20-a.jpg"
+    },
+    {
+      "id": "premium-silica-20-40",
+      "name": "Premium Silica (20/40) Small Grit",
+      "categories": [
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/premium-silica-20-40/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/premium-silica-20-40-a.jpg"
+    },
+    {
+      "id": "envirofill",
+      "name": "Envirofill",
+      "categories": [
+        "Accessories",
+        "Sand / Infill"
+      ],
+      "url": "https://turfhub.com/product/envirofill/",
+      "image": "https://turfhub.com/wp-content/uploads/2020/01/infill-1-a-1.jpeg"
+    },
+    {
+      "id": "turf-rake",
+      "name": "Turf Rake",
+      "categories": [
+        "Turf Care",
+        "Accessories"
+      ],
+      "url": "https://turfhub.com/product/turf-rake/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/turf-rake-b-1.jpg"
+    },
+    {
+      "id": "silica-sand",
+      "name": "Silica Sand",
+      "categories": [
+        "Accessories",
+        "Sand / Infill"
+      ],
+      "url": "https://turfhub.com/product/silica-sand/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/silica-12-40-a.jpg"
+    },
+    {
+      "id": "green-hitting-mat",
+      "name": "Green Hitting Mat",
+      "categories": [
+        "Hitting Mats",
+        "Sport Turf"
+      ],
+      "url": "https://turfhub.com/product/green-hitting-mat/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/batting-mat-green-a.jpg"
+    },
+    {
+      "id": "clay-hitting-mat",
+      "name": "Clay Hitting Mat",
+      "categories": [
+        "Hitting Mats",
+        "Sport Turf"
+      ],
+      "url": "https://turfhub.com/product/clay-hitting-mat/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/batting-mat-brown-a.jpg"
+    },
+    {
+      "id": "install-nails-5",
+      "name": "Install Nails 5\u2033",
+      "categories": [
+        "Accessories",
+        "Install Accessories"
+      ],
+      "url": "https://turfhub.com/product/install-nails-5/",
+      "image": "https://turfhub.com/wp-content/uploads/2018/04/large-nails-a-1.jpg"
+    }
+  ],
+  "pricing_DEMO_DEFAULTS": {
+    "note": "TurfHub publishes no prices. Installed price ranges per sq ft from 2026 cost guides and dealer price lists; every dealer overrides with their own.",
+    "installedPerSqFt": {
+      "landscape": [
+        6,
+        12
+      ],
+      "pet": [
+        7,
+        13
+      ],
+      "putting": [
+        10,
+        20
+      ],
+      "sport": [
+        7,
+        14
+      ],
+      "play": [
+        8,
+        15
+      ],
+      "wall": [
+        15,
+        30
+      ]
+    },
+    "minimumJob": 1500,
+    "removalPerSqFt": [
+      1,
+      2
+    ],
+    "wasteFactor": 0.1
+  },
+  "dealerAssets": {
+    "hotlinking": "allowed (HTTP 200 with a foreign referer); still download and rehost for speed and permanence",
+    "specSheets": "Each line links a TurfHub spec PDF and a CAD install detail (specSheet, cadDetail)."
+  },
+  "skipped": [
+    {
+      "name": "AUTO-DRAFT",
+      "why": "uncategorized draft"
+    },
+    {
+      "name": "Turfhub Blend 45",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "TurfHub 1K Seam Glue (29oz)",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Overstock 80",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Overstock 60",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "TurfHub 1K Seam Glue (5 gallon)",
+      "why": "uncategorized draft"
+    },
+    {
+      "name": "TurfZap",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Putting Green Kit",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Homeowner Kit",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Contractor Kit",
+      "why": "discontinued/clearance/sample"
+    },
+    {
+      "name": "Tour",
+      "why": "discontinued/clearance/sample"
+    }
+  ]
+}

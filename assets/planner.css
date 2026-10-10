@@ -1,0 +1,151 @@
+/* Turf Planner styles. Theme through these variables on any ancestor. */
+.tp {
+  --tp-brand: #0f5a2a; --tp-brand-ink: #fff; --tp-accent: #d08b3b;
+  --tp-ink: #1d2420; --tp-muted: #5c665f; --tp-line: #dfe5de; --tp-card: #fff; --tp-soft: #f3f6f1;
+  --tp-radius: 14px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start;
+  color: var(--tp-ink); font: 16px/1.45 inherit;
+}
+.tp * { box-sizing: border-box; }
+.tp button, .tp input { font: inherit; color: inherit; }
+.tp-main { display: grid; gap: 12px; min-width: 0; }
+.tp-area { padding: 0; margin: 0; background: var(--tp-card); border: 1px solid var(--tp-line); border-radius: var(--tp-radius); overflow: hidden; }
+.tp-area.is-open { border-color: color-mix(in srgb, var(--tp-brand) 45%, var(--tp-line)); box-shadow: 0 8px 28px rgb(0 0 0 / .06); }
+.tp-area-head { display: flex; align-items: stretch; }
+.tp-toggle strong { display: block; font-size: 1.05rem; }
+.tp-toggle small { color: var(--tp-muted); }
+.tp-area-icon { color: var(--tp-brand); width: 44px; height: 44px; display: grid; place-items: center; background: var(--tp-soft); border-radius: 12px; }
+.tp-remove { width: 52px; border: 0; background: none; display: grid; place-items: center; color: var(--tp-muted); cursor: pointer; }
+.tp-remove:hover { color: #b3261e; }
+.tp-field { display: grid; gap: 4px; font-size: .88rem; color: var(--tp-muted); }
+.tp-field input { min-height: 44px; padding: 8px 12px; border: 1px solid var(--tp-line); border-radius: 10px; background: #fff; font-size: 1rem; color: var(--tp-ink); width: 100%; }
+.tp-field input:focus-visible, .tp button:focus-visible, .tp-check input:focus-visible { outline: 3px solid color-mix(in srgb, var(--tp-brand) 55%, transparent); outline-offset: 2px; }
+.tp-uses { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tp-uses legend { font-size: .88rem; color: var(--tp-muted); margin-bottom: 6px; }
+.tp-uses button { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--tp-line); background: #fff; cursor: pointer; }
+.tp-uses button[aria-pressed="true"] { background: var(--tp-brand); color: var(--tp-brand-ink); border-color: var(--tp-brand); }
+.tp-size { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+.tp-size .tp-field { flex: 1 1 140px; }
+.tp-size .tp-small { flex: 1 1 90px; }
+.tp-or, .tp-x { color: var(--tp-muted); padding-bottom: 12px; }
+.tp-range { width: 100%; accent-color: var(--tp-brand); height: 28px; }
+.tp-check { display: flex; gap: 10px; align-items: center; min-height: 44px; cursor: pointer; }
+.tp-check input { width: 22px; height: 22px; accent-color: var(--tp-brand); flex: none; }
+.tp-check small { color: var(--tp-muted); }
+.tp-prefs { display: flex; flex-wrap: wrap; column-gap: 20px; }
+.tp-prod:hover { transform: translateY(-2px); }
+.tp-prod[aria-checked="true"] { border-color: var(--tp-brand); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tp-brand) 18%, transparent); }
+.tp-prod-price { color: var(--tp-brand); font-weight: 600; }
+.tp-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tp-tags em { font-style: normal; font-size: .72rem; padding: 2px 7px; border-radius: 999px; background: var(--tp-soft); color: var(--tp-muted); }
+.tp-why, .tp-note { margin: 0; color: var(--tp-muted); font-size: .92rem; }
+.tp-add { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border: 2px dashed var(--tp-line); border-radius: var(--tp-radius); background: transparent; cursor: pointer; font-weight: 600; color: var(--tp-brand); }
+.tp-add:hover { border-color: var(--tp-brand); }
+.tp-summary h3 { margin: 0; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tp-muted); }
+.tp-sub { margin: 0; color: var(--tp-muted); font-size: .9rem; }
+.tp-lines { list-style: none; margin: 0; padding: 10px 0; border-block: 1px solid var(--tp-line); display: grid; gap: 8px; }
+.tp-lines li { display: flex; justify-content: space-between; gap: 10px; font-size: .92rem; }
+.tp-lines small { display: block; color: var(--tp-muted); }
+.tp-rebate { margin: 0; color: var(--tp-brand); font-weight: 600; }
+.tp-water p { margin: 0; }
+.tp-water b { color: var(--tp-brand); }
+.tp-inline input { min-height: 44px; }
+.tp-cta { min-height: 52px; border: 0; border-radius: 12px; background: var(--tp-accent); color: #fff; font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0 20px; }
+.tp-cta:hover { filter: brightness(1.05); }
+.tp-share, .tp-ghost { min-height: 44px; border: 1px solid var(--tp-line); border-radius: 12px; background: #fff; cursor: pointer; }
+.tp-fine { margin: 0; font-size: .76rem; color: var(--tp-muted); }
+.tp-dialog { border: 0; border-radius: 18px; padding: 0; width: min(460px, calc(100vw - 32px)); box-shadow: 0 30px 80px rgb(0 0 0 / .3); }
+.tp-dialog::backdrop { background: rgb(10 20 12 / .55); }
+.tp-lead { padding: 24px; display: grid; gap: 12px; }
+.tp-lead h3 { margin: 0; font-size: 1.3rem; }
+.tp-error { margin: 0; color: #b3261e; font-weight: 600; }
+.tp-lead-actions { display: flex; gap: 10px; justify-content: flex-end; }
+
+@media (prefers-reduced-motion: reduce) { .tp-prod { transition: none; } .tp-prod:hover { transform: none; } }
+
+.tp [hidden] { display: none !important; }
+/* `.tp button { color: inherit }` outranks single-class rules; restate colored buttons at equal weight. */
+.tp .tp-cta { color: #fff; }
+.tp .tp-add, .tp .tp-prod-price { color: var(--tp-brand); }
+.tp .tp-uses button[aria-pressed="true"] { color: var(--tp-brand-ink); }
+
+/* Compact area card */
+.tp-toggle { flex: 1; display: flex; gap: 12px; align-items: center; text-align: left; padding: 10px 14px; min-height: 56px; background: none; border: 0; cursor: pointer; }
+.tp-area-icon { width: 38px; height: 38px; }
+.tp-head-txt { flex: 1; min-width: 0; }
+.tp-head-txt small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tp-area-price { font-weight: 700; font-size: .92rem; white-space: nowrap; color: var(--tp-ink); }
+.tp-area.is-open .tp-area-price { display: none; }
+.tp-area-body { padding: 2px 14px 14px; display: grid; gap: 10px; }
+.tp-top { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 10px 14px; align-items: end; }
+.tp-uses { gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 2px 0; }
+.tp-uses legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.tp-uses button { min-height: 40px; padding: 4px 12px; white-space: nowrap; font-size: .9rem; flex: none; }
+.tp-uses button svg { width: 18px; height: 18px; }
+.tp-size { display: grid; grid-template-columns: minmax(0, 1.3fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; align-items: end; }
+.tp-size .tp-field { flex: initial; }
+.tp-or, .tp-x { padding-bottom: 10px; }
+.tp-field input { min-height: 42px; }
+.tp-range { height: 22px; margin: -2px 0 0; }
+.tp-flags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tp-pill { position: relative; cursor: pointer; }
+.tp-pill input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.tp-pill span { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 13px; border-radius: 999px; border: 1px solid var(--tp-line); background: #fff; font-size: .86rem; font-weight: 600; }
+.tp-pill input:checked + span { background: color-mix(in srgb, var(--tp-brand) 12%, #fff); border-color: var(--tp-brand); color: var(--tp-brand); }
+.tp-pill input:checked + span::before { content: "\2713"; margin-right: 6px; font-weight: 800; }
+.tp-pill input:focus-visible + span { outline: 3px solid color-mix(in srgb, var(--tp-brand) 55%, transparent); outline-offset: 2px; }
+.tp-picker-head { display: flex; justify-content: space-between; align-items: center; margin-top: 2px; font-size: .9rem; }
+.tp-picker-head i { font-style: normal; font-weight: 500; color: var(--tp-muted); }
+.tp-arrows { display: flex; gap: 4px; }
+.tp-arrows button { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--tp-line); background: #fff; cursor: pointer; font-size: 1.15rem; line-height: 1; }
+.tp-products { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding: 3px 3px 8px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+.tp-prod { flex: 0 0 132px; display: grid; gap: 2px; align-content: start; text-align: left; padding: 7px; border: 2px solid var(--tp-line); border-radius: 12px; background: #fff; cursor: pointer; scroll-snap-align: start; transition: border-color .15s; }
+.tp-prod:hover { transform: none; border-color: color-mix(in srgb, var(--tp-brand) 40%, var(--tp-line)); }
+.tp-prod img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; background: var(--tp-soft); }
+.tp-prod-name { font-weight: 700; font-size: .84rem; line-height: 1.15; }
+.tp-prod-spec, .tp-prod-price { font-size: .72rem; color: var(--tp-muted); line-height: 1.25; }
+.tp-why { font-size: .86rem; }
+
+/* Compact estimate panel */
+.tp { gap: 18px; grid-template-columns: minmax(0, 1fr) 320px; }
+.tp-summary { position: sticky; top: 88px; background: var(--tp-card); border: 1px solid var(--tp-line); border-radius: var(--tp-radius); padding: 16px; display: grid; gap: 8px; box-shadow: 0 10px 32px rgb(0 0 0 / .07); }
+.tp-total { margin: 0; font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 800; line-height: 1.1; }
+.tp-lines { padding: 8px 0; gap: 6px; }
+.tp-lines li { font-size: .88rem; }
+.tp-water { background: var(--tp-soft); border-radius: 10px; padding: 9px 12px; display: grid; gap: 4px; font-size: .88rem; }
+.tp-water .tp-sub { font-size: .8rem; }
+.tp-cta { min-height: 48px; }
+.tp-share { min-height: 38px; border: 0; background: none; color: var(--tp-muted); text-decoration: underline; font-size: .85rem; }
+.tp-fine { font-size: .72rem; }
+
+/* Phone: the estimate and the quote button stay in view while you scroll the plan. */
+.tp-bar { display: none; }
+@media (max-width: 860px) {
+  .tp { grid-template-columns: 1fr; }
+  .tp-summary { position: static; }
+  .tp-top { grid-template-columns: 1fr; }
+  .tp-bar { display: flex; position: sticky; bottom: 76px; z-index: 6; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 8px 8px 14px; background: #fff; border: 1px solid var(--tp-line); border-radius: 14px; box-shadow: 0 8px 28px rgb(0 0 0 / .18); }
+  .tp-bar small { display: block; font-size: .7rem; color: var(--tp-muted); text-transform: uppercase; letter-spacing: .06em; }
+  .tp-bar strong { font-size: 1.05rem; font-weight: 800; }
+  .tp-bar .tp-cta { min-height: 44px; padding: 0 16px; font-size: .95rem; white-space: nowrap; }
+  .tp-arrows { display: none; }
+}
+@media (max-width: 480px) { .tp-size { grid-template-columns: 1fr 1fr; } .tp-size .tp-or, .tp-size .tp-x { display: none; } .tp-size > label:first-child { grid-column: 1 / -1; } }
+.tp .tp-bar .tp-cta { color: #fff; }
+.tp .tp-share { color: var(--tp-muted); }
+
+/* Same fix as the rendering tool: let the card's column shrink so the turf row scrolls inside it instead of widening it. */
+.tp-area-body, .tp-main, .tp-areas { grid-template-columns: minmax(0, 1fr); }
+.tp-picker-head, .tp-products, .tp-top, .tp-flags, .tp-uses { min-width: 0; }
+
+/* Planner and quote dialog fields fill their column too. */
+.tp-field, .tp-field input { min-width: 0; }
+.tp-lead .tp-field input { width: 100%; }
+
+/* Phone: show every "what is it for" choice (wrap, no hidden sideways scroll) and keep the bar's price on one line. */
+@media (max-width: 860px) {
+  .tp-uses { flex-wrap: wrap; overflow: visible; }
+  .tp-bar strong { font-size: .95rem; white-space: nowrap; }
+  .tp-bar .tp-cta { padding: 0 12px; font-size: .88rem; }
+  .tp-bar { gap: 8px; padding-left: 12px; }
+}

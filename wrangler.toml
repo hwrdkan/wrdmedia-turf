@@ -1,0 +1,15 @@
+name = "wrdmedia-turf"
+pages_build_output_dir = "public"
+compatibility_date = "2026-10-10"
+
+# Add your NEW account's KV namespace binding below before enabling renders.
+# [[kv_namespaces]]
+# binding = "RENDER_KV"
+# id = "YOUR_NEW_KV_NAMESPACE_ID"
+
+[vars]
+RENDERS_PAUSED = "1"
+DAILY_PER_LEAD = "8"
+DAILY_PER_IP = "15"
+MONTHLY_CAP = "150"
+CACHE_DAYS = "7"
