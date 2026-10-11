@@ -90,25 +90,25 @@
     const step = (n, title, body, opts = {}) => `<section class="tv-step" data-step="${n}"><button type="button" class="tv-hd" aria-expanded="false" aria-controls="tv-b${n}"><span class="tv-num">${n}</span><span class="tv-ttl">${title}${opts.optional ? " <em>optional</em>" : ""}</span><span class="tv-sum" data-sum="${n}"></span>${chev}</button><div class="tv-body" id="tv-b${n}" hidden>${body}</div></section>`;
     root.innerHTML = `
       <div class="tv-controls">
-        ${step(1, "Your yard photo", `<label class="tv-drop"><input type="file" accept="image/jpeg,image/png,image/webp" class="tv-file">
-            <span class="tv-drop-in">${icon.upload}<b>Upload a photo of your yard</b><small>Stand where you'd take a picture to show a friend. JPG or PNG.</small></span>
-            <img class="tv-thumb" alt="Your uploaded yard photo" hidden></label>`)}
         ${step(2, "What are you installing?", `<div class="tv-modes" role="radiogroup" aria-label="What are you installing"></div><p class="tv-where">Where does it go?</p><div class="tv-chips tv-areas"></div>`)}
         ${step(3, "Pick your turf", `<div class="tv-cat"><div class="tv-tabs" role="tablist" aria-label="Turf categories"></div></div><div class="tv-swatches"></div><div class="tv-foot"><p class="tv-fine tv-swipe">Reference product catalog from the original demo. Verify current specifications with the supplier.</p><div class="tv-arrows"><button type="button" data-nav="-1" aria-label="Scroll turf options left">&lsaquo;</button><button type="button" data-nav="1" aria-label="Scroll turf options right">&rsaquo;</button></div></div>`)}
         ${step(4, "Putting green", `<div class="tv-subs" hidden></div><button type="button" class="tv-link tv-addlawn" data-mode="both" data-goto="3" hidden>Want new lawn turf too? Add it</button><button type="button" class="tv-next" data-next="5">Continue</button>`)}
         ${step(5, "Preview details", `<div class="tv-lead"><label>Name<input name="name" autocomplete="name" required></label><label>Phone<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(480) 555-0123" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label><label>ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="85040" required></label></div>
-          <p class="tv-fine tv-privacy">These details support the original server validation and usage limits. This standalone page does not send emails or book jobs. Your photo is sent to the configured image provider only when you request a render.</p>`)}
+          <p class="tv-fine tv-privacy">These details support the original server validation and usage limits. This standalone page does not send emails or book jobs. Your photo is sent to the configured image provider only when you request a render.</p><button type="button" class="tv-next" data-next="1">Continue</button>`)}
+        ${step(1, "Your yard photo", `<label class="tv-drop"><input type="file" accept="image/jpeg,image/png,image/webp" class="tv-file">
+            <span class="tv-drop-in">${icon.upload}<b>Upload a photo of your yard</b><small>Stand where you'd take a picture to show a friend. JPG or PNG.</small></span>
+            <img class="tv-thumb" alt="Your uploaded yard photo" hidden></label>`)}
         <button type="button" class="tv-go">See my yard with this turf</button>
         <p class="tv-msg" role="status" aria-live="polite"></p>
       </div>
       <div class="tv-stage" aria-live="polite">
-        <div class="tv-empty"><p>Upload a yard photo to begin. Your AI preview appears here after you request a render.</p></div>
+        <div class="tv-empty"><p>Pick your turf, then add a photo of your yard. Your AI preview appears here after you request a render.</p></div>
       </div>`;
 
     const $ = (s) => root.querySelector(s);
 
     // Accordion: one step open at a time; closed steps show what was chosen.
-    st.open = 1; st.cat = "all"; st.sub = "shape";
+    st.open = 2; st.cat = "all"; st.sub = "shape";
     function setOpen(n, scroll) {
       st.open = n;
       root.querySelectorAll(".tv-step").forEach((s) => {
@@ -404,11 +404,11 @@
         const t = $(".tv-thumb"); t.src = p.dataUrl; t.hidden = false; $(".tv-drop-in").hidden = true;
         msg.textContent = "";
         $(".tv-stage").innerHTML = `<figure class="photo-preview"><img src="${st.photo}" alt="Your original yard photo"><figcaption>Your original photo. Choose your turf to prepare a preview.</figcaption></figure>`;
-        drawChoices(); setOpen(2, true);
+        drawChoices(); setOpen(0); $(".tv-go").scrollIntoView({ behavior: "smooth", block: "center" });
       } catch (err) { msg.className = "tv-msg is-err"; msg.textContent = err.message; }
     });
 
-    drawChoices(); setOpen(1);
+    drawChoices(); setOpen(2);
   }
 
   window.TurfVisualizer = { mount };
