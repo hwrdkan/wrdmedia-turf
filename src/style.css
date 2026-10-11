@@ -57,3 +57,11 @@ footer{border-top:1px solid var(--line)}
 .tv small,.tv-pre small{font-size:13px}
 
 @media(max-width:720px){.tv-stage:has(.tv-empty){order:3}.tv-empty{min-height:180px;padding:24px}}
+
+/* ===== Bright silver surfaces get black text ===== */
+.tv .tv-go,.tv-go{color:#000}
+.tv-price{color:#000}
+.tv-step.is-open .tv-num,.tv-sub-step.is-open .tv-sub-n{color:#000}
+.tv .tv-tabs button[aria-selected=true]{color:#000}
+.tv-next{color:#000;background:var(--bronze-grad);background-size:230% 100%;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 6px 18px -8px rgba(200,205,213,.4)}
+.tv-switch input:checked + .tv-track::after{background:#000}
