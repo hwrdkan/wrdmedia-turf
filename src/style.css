@@ -12,7 +12,7 @@
 a{color:#fff}
 header{border-bottom:1px solid var(--line)}
 .identity{font-family:Archivo,Geist,sans-serif;font-stretch:112%;font-weight:800;letter-spacing:-.02em;gap:14px}
-.wrdmark{display:block;width:84px;aspect-ratio:1291/380;background:#fff;filter:drop-shadow(0 0 .7px rgba(220,226,235,.95)) drop-shadow(0 0 9px rgba(200,205,213,.5));-webkit-mask:url(../assets/wrd-mark.png) center/contain no-repeat;mask:url(../assets/wrd-mark.png) center/contain no-repeat}
+.wrdmark{display:block;width:84px;aspect-ratio:1291/380;background:#fff;filter:drop-shadow(0 0 .7px rgba(220,226,235,.95)) drop-shadow(0 0 9px rgba(200,205,213,.5));-webkit-mask:url(../assets/wrd-mark.png?v=2) center/contain no-repeat;mask:url(../assets/wrd-mark.png?v=2) center/contain no-repeat}
 .start{background:var(--bronze-grad);background-size:230% 100%;color:#000;border-radius:14px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 8px 24px -8px rgba(200,205,213,.6)}
 .intro h1,.notes h2{font-family:Archivo,Geist,sans-serif;font-stretch:112%;font-weight:800;letter-spacing:-.03em;color:#fff;-webkit-text-stroke:.7px rgba(214,220,230,.75);paint-order:stroke fill;text-shadow:0 0 24px rgba(200,210,225,.3)}
 .setup-note{background:#0B0B0C;border:1px solid var(--line);color:#D0D4DA;border-radius:14px}
