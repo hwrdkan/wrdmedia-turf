@@ -108,7 +108,13 @@
     const $ = (s) => root.querySelector(s);
 
     // Accordion: one step open at a time; closed steps show what was chosen.
-    st.open = 2; st.cat = "all"; st.sub = "shape";
+    const PHONE = matchMedia("(max-width: 720px)").matches;
+    if (!PHONE) {
+      $(".tv-controls").prepend($('[data-step="1"]'));
+      const nb = $('[data-step="5"] .tv-next'); if (nb) nb.remove();
+      $(".tv-empty p").textContent = "Upload a yard photo to begin. Your AI preview appears here after you request a render.";
+    }
+    st.open = PHONE ? 2 : 1; st.cat = "all"; st.sub = "shape";
     function setOpen(n, scroll) {
       st.open = n;
       root.querySelectorAll(".tv-step").forEach((s) => {
@@ -404,11 +410,12 @@
         const t = $(".tv-thumb"); t.src = p.dataUrl; t.hidden = false; $(".tv-drop-in").hidden = true;
         msg.textContent = "";
         $(".tv-stage").innerHTML = `<figure class="photo-preview"><img src="${st.photo}" alt="Your original yard photo"><figcaption>Your original photo. Choose your turf to prepare a preview.</figcaption></figure>`;
-        drawChoices(); setOpen(0); $(".tv-go").scrollIntoView({ behavior: "smooth", block: "center" });
+        drawChoices();
+        if (PHONE) { setOpen(0); $(".tv-go").scrollIntoView({ behavior: "smooth", block: "center" }); } else setOpen(2, true);
       } catch (err) { msg.className = "tv-msg is-err"; msg.textContent = err.message; }
     });
 
-    drawChoices(); setOpen(2);
+    drawChoices(); setOpen(PHONE ? 2 : 1);
   }
 
   window.TurfVisualizer = { mount };
