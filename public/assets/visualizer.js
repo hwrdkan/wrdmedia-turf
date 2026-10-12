@@ -328,9 +328,9 @@
         const areas = [];
         if (yardOn && yard) areas.push({ name: "Yard", use: line.uses.includes("pet") ? "pet" : "landscape", sqft: yard, lineId: curId() });
         if (putt) areas.push({ name: "Putting green", use: "putting", sqft: putt, lineId: st.puttingId, removeGrass: false });
-        const est = window.TurfRules.estimate(C, { areas }, {});
+        const est = window.TurfRules.estimate(C, { areas }, { prices: D.prices, defaultRanges: D.defaultRanges });
         qbox.querySelector("[data-out]").innerHTML = est.totalSqft
-          ? `<p class="tv-q-range">${money(est.low)} to ${money(est.high)}</p><p class="tv-fine">${est.totalSqft.toLocaleString("en-US")} sq ft${est.minimumApplied ? ", minimum job applied" : ""}. Installed planning range: materials, labor, base prep and grass removal.</p>`
+          ? `<ul class="tv-q-lines">${est.areas.map(a => { const nm = a.use === "putting" ? "Putting green" : "TurfHub " + esc(lineOf(a.lineId).name); const r = a.rate; return `<li><span>${nm}<small>${a.sqft.toLocaleString("en-US")} sq ft at ${r.low === r.high ? "$" + r.low : "$" + r.low + " to $" + r.high}/sq ft${a.removeGrass ? " + grass removal" : ""}</small></span><b>${money(a.low)} to ${money(a.high)}</b></li>`; }).join("")}</ul><p class="tv-q-range">${money(est.low)} to ${money(est.high)}</p><p class="tv-fine">Total for ${est.totalSqft.toLocaleString("en-US")} sq ft${est.minimumApplied ? ", minimum job applied" : ""}. Installed planning range: materials, labor, base prep and grass removal.</p>`
           : `<p class="tv-fine">Enter your yard size to see a range.</p>`;
       }
       qbtn.addEventListener("click", e => {
