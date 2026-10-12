@@ -110,9 +110,13 @@
     return `Blades are about ${fmtPile(pile)} tall, similar to a freshly cut real lawn. The camera is a phone held at standing height, so even at the very bottom edge of the frame the ground is several feet away: individual blades there are thin, short strands only a few pixels wide, never bigger than a pencil line, and the lowest strip of the image looks just like the rest of the lawn, only slightly sharper. NEVER draw large, tall, close-up or out-of-focus blades, a grass border or a macro view of the turf anywhere, especially along the bottom edge. Blades merge into an even fine texture by mid distance, and far away the lawn reads as one smooth, even green. Blade size shrinks steadily with distance, like in any real photograph.`;
   }
 
-  function build({ line, area = "backyard", preset = "none", puttingLine = null, size = "m", place = null, guide = false, mode = "lawn", border = "auto" }) {
+  // Appended to angles 2 and 3 of a set: the first angle's finished render is attached as REFERENCE RENDER so every
+// angle shows the same project (same turf look, same putting green design), each in its own photo and camera angle.
+  const REF_CLAUSE = "SAME PROJECT AS THE REFERENCE RENDER. The image labeled REFERENCE RENDER is the finished result of this same project, already installed, photographed from a different angle of the same property. Install the identical product and design: the same turf look (blade color mix, blade length, fullness, thatch and lean) and, if there is a putting green, the SAME green: the same shape, the same overall size, the same collar width, the same number of cups with white flagsticks, the same border or edge, and the same two-tone fringe. Show it as it would look from THIS photo's camera position and perspective. Use the reference ONLY for the look and design of the new installation. Never copy its camera angle, framing, background objects or scene: the FIRST image alone decides the scene, framing and viewpoint.";
+
+  function build({ line, area = "backyard", preset = "none", puttingLine = null, size = "m", place = null, guide = false, mode = "lawn", border = "auto", hasRef = false }) {
     if (!line) throw new Error("line required");
-    if (mode === "putt") return buildPutting({ line: puttingLine || line, area, preset, size, border });
+    if (mode === "putt") return buildPutting({ line: puttingLine || line, area, preset, size, border, place, guide, hasRef });
     const a = AREAS[area] || AREAS.backyard;
     const p = PRESETS[preset] && preset !== "none" ? PRESETS[preset] : null;
     const putting = p ? (puttingLine || null) : null;
@@ -140,18 +144,19 @@
         : "Place it in the open part of the new turf where a homeowner would want it, on the ground.";
       lines.push("", `PUTTING GREEN. Inside the new turf area, add ${p.desc}. About ${f.sqft} square feet, roughly ${f.widthFt} by ${f.lengthFt} feet. It has ${f.cups} cups, each with a white flagstick, spaced apart at different angles and not at the edge. A collar of the landscape turf about 2 to 3 feet wide runs around the whole green. ${where} The putting surface is ${putting ? `TurfHub ${putting.name}, ${describeTurf(putting)}` : "short, tight putting-green turf"}: a fine, dense, perfectly even short-cut surface, visibly shorter, smoother and slightly darker than the surrounding lawn turf, with a crisp cut line. Cups are flush with the surface. Keep the green entirely on the ground plane with correct perspective and the same size relative to nearby objects as a real ${f.widthFt} by ${f.lengthFt} foot green.`);
     }
+    if (hasRef) lines.push("", REF_CLAUSE);
     lines.push("", "CHANGE NOTHING ELSE. Treat every pixel that is not the ground being replaced as locked. The house and its walls, roof, windows, shutters, doors, fences, block walls, pool, patio, concrete, existing pavers, rocks, trees, shrubs, utility boxes, sky, shadows, camera angle, lens, framing and time of day stay identical to the FIRST image. ADD NOTHING that is not in the FIRST image: no new pavers, borders, edging, curbs, planting beds, shrubs, flowers, rocks, furniture, windows or buildings. If the original ground meets a wall or fence with no border, the turf runs straight to the base of that wall. Do not crop, zoom, widen or re-compose the shot. No people, pets, text, logos or watermarks. The result must look like the same unretouched photograph of the same property taken right after installation.");
     return lines.join("\n");
   }
 
   // Putting-green-only projects: just a green (and its collar) on the existing ground; everything else stays as it is.
-  function buildPutting({ line, area = "backyard", preset = "kidney", size = "m", border = "auto" }) {
+  function buildPutting({ line, area = "backyard", preset = "kidney", size = "m", border = "auto", place = null, guide = false, hasRef = false }) {
     if (!line) throw new Error("line required");
     const a = AREAS[area] || AREAS.backyard, pr = PRESETS[preset] && preset !== "none" ? PRESETS[preset] : PRESETS.kidney, f = footprint(PRESETS[preset] && preset !== "none" ? preset : "kidney", size);
     return [
       "TASK: photo edit with a locked camera. The FIRST image is the photograph to edit. It is the canvas: the output must be the same photograph, same framing, same objects in the same positions, with only ONE addition. The SECOND image (and the THIRD, if present) is a studio reference photo of the exact putting-green turf to install, shown from above and from the edge. The reference photos are NOT part of the scene.",
       "",
-      `Install ONLY a putting green in the open ground of ${a.target}. It is ${pr.desc}. ${(SIZES[size] || SIZES.m).fill ? `It is sized to fill most of the open ground of that area, leaving only a modest margin of the existing ground around it (about ${f.sqft} square feet, roughly ${f.widthFt} by ${f.lengthFt} feet)` : `About ${f.sqft} square feet, roughly ${f.widthFt} by ${f.lengthFt} feet`}, with ${f.cups} cups each with a white flagstick, spaced apart at different angles and not at the edge.`,
+      `Install ONLY a putting green in the open ground of ${a.target}. ${place ? `Center it at about ${Math.round(place.x * 100)} percent from the left edge and ${Math.round(place.y * 100)} percent from the top edge of the frame, on the ground. ${guide ? "The LAST image is the same photograph with a white outline drawn on it: that outline is the exact footprint, position and size of the green. Build the green inside that outline, then do not draw the outline itself. " : ""}` : ""}It is ${pr.desc}. ${(SIZES[size] || SIZES.m).fill ? `It is sized to fill most of the open ground of that area, leaving only a modest margin of the existing ground around it (about ${f.sqft} square feet, roughly ${f.widthFt} by ${f.lengthFt} feet)` : `About ${f.sqft} square feet, roughly ${f.widthFt} by ${f.lengthFt} feet`}, with ${f.cups} cups each with a white flagstick, spaced apart at different angles and not at the edge.`,
       "",
       "TWO-TONE FRINGE. Around the putting surface runs a fringe band 2 to 3 feet wide of slightly taller, darker green turf with a soft, fuller look, so the green reads as two tones: a lighter, very short, smooth putting surface inside, and a darker fringe around it, with a crisp clean line between them.",
       "",
@@ -161,6 +166,7 @@
       "",
       "READ THE SAMPLE CORRECTLY. The sample is a close-up of a piece only about one foot square on a white background. Use it ONLY to learn the exact color and surface character. Never paste, tile or place the sample (or any enlarged version of it) in the scene, and never reproduce its white background, black backing, cut edges or square shape.",
       "",
+      ...(hasRef ? [REF_CLAUSE, ""] : []),
       "THE REST OF THE YARD STAYS EXACTLY AS IT IS. Every other part of the ground (existing lawn, dry grass, dirt, gravel, decomposed granite, pavers, concrete) must remain untouched, with its own color, texture and condition. Do NOT turn any of the rest of the ground into artificial turf or new lawn.",
       "",
       "INSTALLATION. The green lies flat on the ground plane with correct perspective, follows the existing grade, and is the right size relative to nearby objects for a real green of that size. Cups are flush with the surface. No seams, no rolled edges, no stripes, no repeating pattern.",

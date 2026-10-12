@@ -29,8 +29,9 @@ export function nearestRatio(aspect) {
   return RATIOS.reduce((best, r) => { const [w, h] = r.split(":").map(Number); return Math.abs(Math.log(w / h / a)) < Math.abs(Math.log(best.v)) ? { r, v: w / h / a } : best; }, { r: "1:1", v: 1 / a }).r;
 }
 
-async function gemini(key, { photo, swatches, prompt, aspect, model, guide }) {
-  const parts = [{ text: prompt }, { inline_data: { mime_type: photo.mime, data: photo.b64 } }, ...swatches.slice(0, 3).map((s) => ({ inline_data: { mime_type: s.mime, data: s.b64 } })), ...(guide ? [{ inline_data: { mime_type: guide.mime, data: guide.b64 } }] : [])];
+async function gemini(key, { photo, swatches, prompt, aspect, model, guide, ref }) {
+  // Order: scene photo, product samples, REFERENCE RENDER (angles 2 and 3 of a set), then the placement guide last.
+  const parts = [{ text: prompt }, { inline_data: { mime_type: photo.mime, data: photo.b64 } }, ...swatches.slice(0, 3).map((s) => ({ inline_data: { mime_type: s.mime, data: s.b64 } })), ...(ref ? [{ text: "REFERENCE RENDER:" }, { inline_data: { mime_type: ref.mime, data: ref.b64 } }] : []), ...(guide ? [{ inline_data: { mime_type: guide.mime, data: guide.b64 } }] : [])];
   const imageConfig = { imageSize: "1K" };
   const ratio = nearestRatio(aspect);
   if (ratio) imageConfig.aspectRatio = ratio;
@@ -64,7 +65,7 @@ async function fal(key, { photo, swatches, prompt }) {
 
 // OpenAI image edit. Size follows the photo's shape (multiples of 16, long edge 1536), quality from OPENAI_QUALITY
 // (default high), model from OPENAI_MODEL. Real cost is computed from the usage the API returns.
-async function openai(key, { photo, swatches, prompt, aspect, model, env = {}, guide, mask }) {
+async function openai(key, { photo, swatches, prompt, aspect, model, env = {}, guide, mask, ref }) {
   const a = Number(aspect) > 0 ? Number(aspect) : 1.5;
   const r16 = (n) => Math.max(256, Math.round(n / 16) * 16);
   const [w, h] = a >= 1 ? [1536, r16(1536 / a)] : [r16(1536 * a), 1536];
@@ -72,6 +73,7 @@ async function openai(key, { photo, swatches, prompt, aspect, model, env = {}, g
   form.append("model", model || PROVIDERS.openai.model);
   form.append("image[]", new Blob([b64ToBytes(photo.b64)], { type: photo.mime }), "photo.jpg");
   swatches.slice(0, 3).forEach((s, i) => form.append("image[]", new Blob([b64ToBytes(s.b64)], { type: s.mime }), `swatch${i}.jpg`));
+  if (ref) form.append("image[]", new Blob([b64ToBytes(ref.b64)], { type: ref.mime }), "reference.jpg");
   if (mask) form.append("mask", new Blob([b64ToBytes(mask.b64)], { type: "image/png" }), "mask.png");
   if (guide) form.append("image[]", new Blob([b64ToBytes(guide.b64)], { type: guide.mime }), "guide.jpg");
   form.append("prompt", prompt);
@@ -97,12 +99,12 @@ export function pickProvider(requested, keys) {
   return order.find((p) => keys[PROVIDERS[p].key]) || null;
 }
 
-export async function render({ provider, keys, photo, swatches, prompt, aspect, guide, mask }) {
+export async function render({ provider, keys, photo, swatches, prompt, aspect, guide, mask, ref }) {
   const p = pickProvider(provider, keys);
   if (!p) throw Object.assign(new Error("No image provider key is configured (GEMINI_API_KEY, FAL_KEY or OPENAI_API_KEY)."), { status: 500 });
   const model = p === "gemini" && keys.GEMINI_MODEL ? keys.GEMINI_MODEL : p === "openai" && keys.OPENAI_MODEL ? keys.OPENAI_MODEL : PROVIDERS[p].model;
   const t0 = Date.now();
-  const png = await ADAPTERS[p](keys[PROVIDERS[p].key], { photo, swatches, prompt, aspect, model, env: keys, guide, mask });
+  const png = await ADAPTERS[p](keys[PROVIDERS[p].key], { photo, swatches, prompt, aspect, model, env: keys, guide, mask, ref });
   return { png, provider: p, model, ms: Date.now() - t0, usd: p === "gemini" ? (GEMINI_USD[model] ?? PROVIDERS.gemini.usd) : (png.usageUsd ?? PROVIDERS[p].usd), usage: png.usage };
 }
 
@@ -110,6 +112,7 @@ export async function render({ provider, keys, photo, swatches, prompt, aspect, 
 // the server builds the prompt from the catalog and fetches the product photos itself, so the
 // endpoint can never be used as a general-purpose image generator.
 export const MAX_B64 = 8_000_000;
+export const bytesToB64 = (u8) => { let s = ""; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s); };
 export function validate(body, catalog, Prompt) {
   const clean = (s) => String(s || "").replace(/^data:image\/[a-z+]+;base64,/, "").trim();
   const mimeOf = (s) => (String(s || "").match(/^data:(image\/(?:jpeg|png|webp));base64,/) || [])[1] || "image/jpeg";

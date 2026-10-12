@@ -76,7 +76,7 @@
   const priced = Object.keys(D.prices || {});
 
   function mount(root) {
-    const st = { photo: null, w: 0, h: 0, area: "backyard", lineId: priced[0] || "sierra-blend-pro", mode: "lawn", border: "auto", preset: "none", size: "m", puttingId: "tour-platinum", raw: null, locked: null, showLocked: true, busy: false, rawBlob: null, baseKey: null };
+    const st = { photo: null, w: 0, h: 0, area: "backyard", lineId: priced[0] || "sierra-blend-pro", mode: "lawn", border: "auto", preset: "none", size: "m", puttingId: "tour-platinum", raw: null, locked: null, showLocked: true, busy: false, rawBlob: null, baseKey: null, extra: [], place: null, angle: 0, set: null };
     // One AI render per photo + area + putting design. Turf swaps after that are recolored in the browser.
     const curId = () => (st.mode === "putt" ? st.puttingId : st.lineId);   // the product being shown: the lawn turf, or the putting turf for a green-only project
     const baseKey = () => st.photo ? [st.photo.length, st.photo.slice(-64), st.mode, st.border, st.area, st.preset, st.preset === "none" ? "" : [st.puttingId, st.size].join(":")].join("|") : null;
@@ -97,7 +97,8 @@
           <p class="tv-fine tv-privacy">These details support the original server validation and usage limits. This standalone page does not send emails or book jobs. Your photo is sent to the configured image provider only when you request a render.</p><button type="button" class="tv-next" data-next="1">Continue</button>`)}
         ${step(1, "Your yard photo", `<label class="tv-drop"><input type="file" accept="image/jpeg,image/png,image/webp" class="tv-file">
             <span class="tv-drop-in">${icon.upload}<b>Upload a photo of your yard</b><small>Stand where you'd take a picture to show a friend. JPG or PNG.</small></span>
-            <img class="tv-thumb" alt="Your uploaded yard photo" hidden></label>`)}
+            <img class="tv-thumb" alt="Your uploaded yard photo" hidden></label>
+        <div class="tv-extras" hidden><p class="tv-fine"><b>More angles (optional).</b> Add up to 2 more photos of the same yard to see the same project from each side.</p><div class="tv-extra-list"></div><label class="tv-add"><input type="file" accept="image/jpeg,image/png,image/webp" class="tv-file-extra" multiple> + Add another angle</label></div>`)}
         <div class="tv-turnstile" id="tv-turnstile"></div>
         <button type="button" class="tv-go">See my yard with this turf</button>
         <p class="tv-msg" role="status" aria-live="polite"></p>
@@ -185,6 +186,72 @@
       }
       keepScroll.forEach(([s, x]) => { if ($(s)) $(s).scrollLeft = x; });
       drawSummaries();
+      drawIdle();
+    }
+
+
+    // ---- Multi-angle sets and putting-green placement ----
+    const shots = () => [{ photo: st.photo, w: st.w, h: st.h, place: st.place }, ...st.extra];
+    const setPlace = (i, pl) => { if (i === 0) st.place = pl; else st.extra[i - 1].place = pl; };
+    // Outline of the chosen green on a photo, in photo pixels. Width follows the size picked (same rule the server prompt
+    // states), depth is foreshortened more the higher the green sits in the frame; "rot" turns its long side toward the camera.
+    function outlineParams(pl, w, h) {
+      const sh = SHAPES[st.preset], sz = P.SIZES[st.size] || P.SIZES.m;
+      const wPx = sz.w * w * (pl.rot ? 0.75 : 1), persp = 0.3 + 0.45 * pl.y;
+      return { sh, cx: pl.x * w, cy: pl.y * h, sx: wPx / 100, sy: (wPx * persp) / 100, rot: !!pl.rot };
+    }
+    const outlineTf = (o) => `translate(${o.cx} ${o.cy}) scale(${o.sx} ${o.sy}) ${o.rot ? "rotate(90) " : ""}translate(-50 ${-o.sh.h / 2})`;
+    async function makeGuide(sh) {
+      const img = await loadImg(sh.photo), c = document.createElement("canvas");
+      c.width = sh.w; c.height = sh.h;
+      const x = c.getContext("2d"), o = outlineParams(sh.place, sh.w, sh.h);
+      x.drawImage(img, 0, 0, sh.w, sh.h);
+      x.save(); x.translate(o.cx, o.cy); x.scale(o.sx, o.sy); if (o.rot) x.rotate(Math.PI / 2); x.translate(-50, -o.sh.h / 2);
+      x.lineWidth = Math.max(3, sh.w / 220) / Math.max(o.sx, o.sy); x.strokeStyle = "#fff"; x.stroke(new Path2D(o.sh.d)); x.restore();
+      return c.toDataURL("image/jpeg", 0.88);
+    }
+    const b64Blob = (b64, mime) => { const bin = atob(b64), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new Blob([u], { type: mime || "image/png" }); };
+
+    function drawExtras() {
+      const box = $(".tv-extras"); if (!box) return;
+      box.hidden = !st.photo;
+      $(".tv-extra-list").innerHTML = st.extra.map((x, i) => `<span class="tv-xthumb"><img src="${x.photo}" alt="Angle ${i + 2}"><button type="button" data-rm="${i}" aria-label="Remove angle ${i + 2}">&times;</button></span>`).join("");
+      $(".tv-add").hidden = st.extra.length >= 2;
+    }
+    function resetResults() { st.last = null; st.set = null; st.rawBlob = null; st.angle = 0; }
+
+    // What the stage shows before a render: the photo(s), and when a putting green is chosen, the place-it-yourself outline.
+    function idleTabs() {
+      const sh = shots(), i = Math.min(st.angle, sh.length - 1), putt = st.preset !== "none";
+      return sh.length > 1 ? `<div class="tv-angles" role="tablist">${sh.map((x, k) => `<button type="button" role="tab" data-pltab="${k}" aria-selected="${k === i}">${putt && x.place ? "&#10003; " : ""}Angle ${k + 1}</button>`).join("")}</div>` : "";
+    }
+    function drawIdle() {
+      if (!st.photo || st.busy || st.last) return;
+      const sh = shots(), i = Math.min(st.angle, sh.length - 1), cur = sh[i], putt = st.preset !== "none";
+      const tabs = idleTabs();
+      const help = putt
+        ? `<p class="tv-fine"><b>Place your putting green.</b> Tap the spot on ${sh.length > 1 ? "each photo" : "your photo"} where it goes. ${sh.length > 1 ? "Placing it in every angle keeps it the same green in all of them. " : "If you skip this we choose a spot. "}</p>`
+        : `<p class="tv-fine">Your original photo${sh.length > 1 ? "s" : ""}. Choose your turf to prepare a preview.</p>`;
+      $(".tv-stage").innerHTML = `<div class="tv-placer">${tabs}${help}<div class="tv-pl-wrap${putt ? " is-placing" : ""}" data-pl="${i}"><img src="${cur.photo}" alt="Your yard photo, angle ${i + 1}"><svg class="tv-pl-svg" viewBox="0 0 ${cur.w} ${cur.h}" preserveAspectRatio="none" aria-hidden="true"></svg></div>${putt ? `<div class="tv-pl-ctl"><button type="button" data-plrot>Turn it</button><button type="button" data-plclear>Clear</button></div>` : ""}</div>`;
+      drawOutline();
+    }
+    function drawOutline() {
+      const wrap = $(".tv-pl-wrap"); if (!wrap) return;
+      const sh = shots(), cur = sh[Number(wrap.dataset.pl)], svg = wrap.querySelector("svg");
+      if (!cur.place || st.preset === "none") { svg.innerHTML = ""; return; }
+      const o = outlineParams(cur.place, cur.w, cur.h);
+      svg.innerHTML = `<path d="${o.sh.d}" transform="${outlineTf(o)}" fill="rgba(255,255,255,.22)" stroke="#fff" stroke-width="3" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>`;
+    }
+    function angleTabs() {
+      return st.set && st.set.length > 1 ? `<div class="tv-angles" role="tablist">${st.set.map((t, k) => `<button type="button" role="tab" data-angle="${k}" aria-selected="${k === st.angle}">Angle ${k + 1}</button>`).join("")}</div>` : "";
+    }
+    function showAngle(i) {
+      st.angle = i;
+      const t = st.set[i];
+      if (t.error || !t.result) { $(".tv-stage").innerHTML = angleTabs() + `<div class="tv-empty"><p class="is-err">${esc(t.error || "This angle didn't come out clean. Press the button to try again.")}</p></div>`; return; }
+      st.last = t.result; st.rawBlob = st.set[0].rawBlob;
+      $(".tv-stage").innerHTML = stageHTML(t.result);
+      wireStage(t.result);
     }
 
     function fileToPhoto(file) {
@@ -282,9 +349,9 @@
 
     function stageHTML(result) {
       const line = lineOf(curId()), preset = P.PRESETS[st.preset];
-      return `
+      return angleTabs() + `
         <figure class="tv-compare" style="--pos:55%">
-          <img class="tv-before" src="${st.photo}" alt="Your yard before">
+          <img class="tv-before" src="${result.before || st.photo}" alt="Your yard before">
           <img class="tv-after" src="${st.showLocked || result.swapped ? result.lockedUrl : result.rawUrl}" alt="Your yard with TurfHub ${esc(line.name)} installed (concept render)">
           <span class="tv-tag tv-tag-b">Before</span><span class="tv-tag tv-tag-a">After · concept</span>
           <span class="tv-handle" aria-hidden="true"></span>
@@ -299,7 +366,7 @@
           ${result.swapped ? "" : `<label class="tv-lock"><input type="checkbox" ${st.showLocked ? "checked" : ""}> Match exact product color</label>`}
           <p class="tv-fine">${esc(result.report)} This is an AI concept of your photo, not a photo of a finished job. Final layout is set on site.</p>
           <div class="tv-actions">
-            <a class="tv-dl" download="my-yard-${line.id}.jpg" href="${st.showLocked || result.swapped ? result.lockedUrl : result.rawUrl}">${icon.download} Save image</a>
+            <a class="tv-dl" download="my-yard-${line.id}${st.set && st.set.length > 1 ? "-angle" + (st.angle + 1) : ""}.jpg" href="${st.showLocked || result.swapped ? result.lockedUrl : result.rawUrl}">${icon.download} Save image</a>
             <a class="tv-price" href="#" data-quote>Price this turf</a>
             <a class="tv-dl tv-plan" href="#" data-price>Save project plan</a>
           </div>
@@ -361,14 +428,21 @@
       const line = lineOf(curId()), msg = $(".tv-msg");
       if (!st.rawBlob || st.busy || st.baseKey !== baseKey()) return;
       if (!line.swatchLab) { msg.className = "tv-msg"; msg.textContent = "This specialty turf needs a fresh render: press the button below."; return; }
-      const result = await colorLock(st.photo, st.rawBlob, line, { revert: st.preset === "none", partial: st.mode === "putt" });
-      if (result.lockedUrl === result.rawUrl) { msg.className = "tv-msg"; msg.textContent = "We couldn't recolor this render. Press the button below for a fresh render with this turf."; return; }
-      result.swapped = true;
-      result.report = `Instant color preview from your render, no new render used. ${result.report}`;
-      st.last = result;
+      const targets = st.set && st.set.length ? st.set : [{ photo: st.photo, rawBlob: st.rawBlob }];
+      let cur = null;
+      for (let i = 0; i < targets.length; i++) {
+        const t = targets[i]; if (!t.rawBlob) continue;
+        const result = await colorLock(t.photo, t.rawBlob, line, { revert: st.preset === "none", partial: st.mode === "putt" });
+        if (result.lockedUrl === result.rawUrl) { msg.className = "tv-msg"; msg.textContent = "We couldn't recolor this render. Press the button below for a fresh render with this turf."; return; }
+        result.swapped = true; result.before = t.photo;
+        result.report = `Instant color preview from your render, no new render used. ${result.report}`;
+        t.result = result; if (i === st.angle || cur === null) cur = result;
+      }
+      st.last = cur;
       window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_instant_swap", line: curId() } }));
-      $(".tv-stage").innerHTML = stageHTML(result);
-      wireStage(result);
+      if (st.set && st.set.length > 1) { showAngle(st.angle); return; }
+      $(".tv-stage").innerHTML = stageHTML(cur);
+      wireStage(cur);
     }
 
     async function go() {
@@ -379,16 +453,31 @@
       if (problems.length) { msg.className = "tv-msg is-err"; msg.textContent = "Please add " + problems.join(", ") + "."; setOpen(st.photo ? 5 : 1, true); return; }
       const name = lead.name, email = lead.email;
       if (window.turnstileReady && !window.turnstileToken) { msg.className = "tv-msg"; msg.textContent = "Verifying you are human. Give it a second, then press the button again."; return; }
+      const sh = shots(), putting = st.preset !== "none";
+      if (putting && sh.length > 1) {
+        const miss = sh.findIndex((x) => !x.place);
+        if (miss >= 0) { st.angle = miss; st.last = null; drawIdle(); msg.className = "tv-msg is-err"; msg.textContent = "Tap where the green goes on every angle first. That keeps it the same green in each view."; if (matchMedia("(max-width: 900px)").matches) $(".tv-stage").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+      }
       st.busy = true; $(".tv-go").disabled = true; msg.className = "tv-msg"; msg.textContent = "";
       const t0 = Date.now();
       if (matchMedia("(max-width: 900px)").matches) $(".tv-stage").scrollIntoView({ behavior: "smooth", block: "start" }); // on a phone the result sits below the form
-      $(".tv-stage").innerHTML = `<div class="tv-empty tv-working"><span class="tv-spin" aria-hidden="true"></span><p>Installing TurfHub ${esc(lineOf(curId()).name)}… <b class="tv-sec">0</b>s</p></div>`;
+      $(".tv-stage").innerHTML = `<div class="tv-empty tv-working"><span class="tv-spin" aria-hidden="true"></span><p>Installing TurfHub ${esc(lineOf(curId()).name)}${st.extra.length ? " on " + (st.extra.length + 1) + " angles" : ""}… <b class="tv-sec">0</b>s</p></div>`;
       const timer = setInterval(() => { const s = root.querySelector(".tv-sec"); if (s) s.textContent = Math.round((Date.now() - t0) / 1000); }, 1000);
       try {
         window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_render_request", line: curId(), preset: st.preset, mode: st.mode } }));
-        const res = await fetch(ENDPOINT, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ photo: st.photo, aspect: st.w / st.h, mode: st.mode === "putt" ? "putt" : "lawn", border: st.border, lineId: curId(), area: st.area, preset: st.preset, puttingLineId: st.puttingId, size: st.size, lead: { ...lead, source: window.leadSource ? window.leadSource() : null }, turnstile: window.turnstileToken || "" }) });
+        const guides = await Promise.all(sh.map((x) => (putting && x.place ? makeGuide(x) : null)));
+        const payload = { photo: st.photo, aspect: st.w / st.h, mode: st.mode === "putt" ? "putt" : "lawn", border: st.border, lineId: curId(), area: st.area, preset: st.preset, puttingLineId: st.puttingId, size: st.size, lead: { ...lead, source: window.leadSource ? window.leadSource() : null }, turnstile: window.turnstileToken || "" };
+        if (putting && st.place) { payload.place = st.place; payload.guide = guides[0]; }
+        if (st.extra.length) payload.angles = st.extra.map((x, i) => ({ photo: x.photo, aspect: x.w / x.h, place: putting && x.place ? x.place : undefined, guide: guides[i + 1] || undefined }));
+        const res = await fetch(ENDPOINT, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload) });
         if (!res.ok) { const j = await res.json().catch(() => ({})); throw new Error(j.error || `Render failed (${res.status}).`); }
-        const blob = await res.blob();
+        let blobs;
+        if ((res.headers.get("content-type") || "").includes("application/json")) {
+          const data = await res.json();
+          blobs = (data.results || []).map((r) => (r.b64 ? b64Blob(r.b64, r.mime) : { error: r.error }));
+        } else blobs = [await res.blob()];
+        const blob = blobs[0];
+        if (!(blob instanceof Blob)) throw new Error((blob && blob.error) || "That render didn't work. Try again.");
         const result = await colorLock(st.photo, blob, lineOf(curId()), { revert: st.preset === "none", partial: st.mode === "putt" });
         if (result.check && !result.check.ok) {
           window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_render_rejected", reasons: result.check.reasons.join("|") } }));
@@ -396,11 +485,21 @@
           return;
         }
         result.meta = { provider: res.headers.get("x-render-provider"), ms: Date.now() - t0 };
+        result.before = st.photo;
+        st.set = [{ photo: st.photo, rawBlob: blob, result }];
+        for (let i = 1; i < sh.length; i++) {
+          const b = blobs[i];
+          if (!(b instanceof Blob)) { st.set.push({ photo: sh[i].photo, error: (b && b.error) || "This angle didn't render. Try again." }); continue; }
+          const r = await colorLock(sh[i].photo, b, lineOf(curId()), { revert: st.preset === "none", partial: st.mode === "putt" });
+          r.before = sh[i].photo;
+          if (r.check && !r.check.ok) st.set.push({ photo: sh[i].photo, rawBlob: b, error: "This angle didn't come out clean (" + r.check.reasons.join(", ") + "), so we're not showing it. Press the button to render again." });
+          else st.set.push({ photo: sh[i].photo, rawBlob: b, result: r });
+        }
+        st.angle = 0;
         st.last = result; st.rawBlob = blob; st.baseKey = baseKey(); st.renderedLineId = curId();
         msg.className = "tv-msg"; msg.textContent = "Tip: switching turf shows an instant color preview. For the exact blade height and texture of a different turf, press the render button again.";
         window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_render_success", provider: result.meta.provider } }));
-        $(".tv-stage").innerHTML = stageHTML(result);
-        wireStage(result);
+        if (st.set.length > 1) showAngle(0); else { $(".tv-stage").innerHTML = stageHTML(result); wireStage(result); }
         try { sessionStorage.setItem("turfRenderLead", JSON.stringify({ name, email, phone: lead.phone, zip: lead.zip, lineId: curId(), mode: st.mode, preset: st.preset, at: new Date().toISOString() })); } catch (e) { /* demo only */ }
       } catch (err) {
         window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_render_error" } }));
@@ -417,6 +516,11 @@
       if (b.classList.contains("tv-hd")) { const n = Number(b.closest(".tv-step").dataset.step); setOpen(st.open === n ? 0 : n, true); return; }
       if (b.dataset.subhd) { st.sub = st.sub === b.dataset.subhd ? "" : b.dataset.subhd; drawChoices(); return; }
       if (b.dataset.next) { setOpen(Number(b.dataset.next), true); return; }
+      if (b.dataset.rm !== undefined) { st.extra.splice(Number(b.dataset.rm), 1); resetResults(); drawExtras(); drawIdle(); return; }
+      if (b.dataset.angle !== undefined) { showAngle(Number(b.dataset.angle)); return; }
+      if (b.dataset.pltab !== undefined) { st.angle = Number(b.dataset.pltab); drawIdle(); return; }
+      if (b.dataset.plrot !== undefined) { const i = st.angle, c = shots()[i]; if (c && c.place) { setPlace(i, { ...c.place, rot: c.place.rot ? 0 : 1 }); drawOutline(); } return; }
+      if (b.dataset.plclear !== undefined) { setPlace(st.angle, null); drawIdle(); return; }
       if (b.dataset.nav) { const row = $(".tv-swatches"); row.scrollBy({ left: Number(b.dataset.nav) * row.clientWidth * 0.8, behavior: "smooth" }); return; }
       let advance = 0;
       if (b.dataset.cat) st.cat = b.dataset.cat;
@@ -435,15 +539,31 @@
       const again = key && root.querySelector(`[data-${key}="${b.dataset[key]}"]`);
       if (again) again.focus({ preventScroll: true });
     });
+    root.addEventListener("click", (e) => {
+      const wrap = e.target.closest(".tv-pl-wrap.is-placing");
+      if (!wrap || !root.contains(wrap)) return;
+      const r = wrap.getBoundingClientRect(), i = Number(wrap.dataset.pl), c = shots()[i];
+      const x = Math.min(0.95, Math.max(0.05, (e.clientX - r.left) / r.width)), y = Math.min(0.95, Math.max(0.3, (e.clientY - r.top) / r.height));
+      setPlace(i, { x, y, rot: c.place ? c.place.rot : 0 });
+      drawOutline();
+      const tb = root.querySelector(".tv-placer .tv-angles"); if (tb) tb.outerHTML = idleTabs();
+    });
     root.addEventListener("change", async (e) => {
-      if (!e.target.classList.contains("tv-file") || !e.target.files[0]) return;
       const msg = $(".tv-msg");
+      if (e.target.classList.contains("tv-file-extra")) {
+        try {
+          for (const f of [...e.target.files].slice(0, 2 - st.extra.length)) { const q = await fileToPhoto(f); st.extra.push({ photo: q.dataUrl, w: q.w, h: q.h, place: null }); }
+          e.target.value = ""; msg.textContent = ""; resetResults(); st.angle = st.extra.length; drawExtras(); drawIdle();
+        } catch (err) { msg.className = "tv-msg is-err"; msg.textContent = err.message; }
+        return;
+      }
+      if (!e.target.classList.contains("tv-file") || !e.target.files[0]) return;
       try {
         const p = await fileToPhoto(e.target.files[0]);
-        Object.assign(st, { photo: p.dataUrl, w: p.w, h: p.h });
+        Object.assign(st, { photo: p.dataUrl, w: p.w, h: p.h, place: null });
+        resetResults(); drawExtras();
         const t = $(".tv-thumb"); t.src = p.dataUrl; t.hidden = false; $(".tv-drop-in").hidden = true;
         msg.textContent = "";
-        $(".tv-stage").innerHTML = `<figure class="photo-preview"><img src="${st.photo}" alt="Your original yard photo"><figcaption>Your original photo. Choose your turf to prepare a preview.</figcaption></figure>`;
         drawChoices();
         if (PHONE) { setOpen(0); $(".tv-go").scrollIntoView({ behavior: "smooth", block: "center" }); } else setOpen(2, true);
       } catch (err) { msg.className = "tv-msg is-err"; msg.textContent = err.message; }
