@@ -98,6 +98,7 @@
         ${step(1, "Your yard photo", `<label class="tv-drop"><input type="file" accept="image/jpeg,image/png,image/webp" class="tv-file">
             <span class="tv-drop-in">${icon.upload}<b>Upload a photo of your yard</b><small>Stand where you'd take a picture to show a friend. JPG or PNG.</small></span>
             <img class="tv-thumb" alt="Your uploaded yard photo" hidden></label>`)}
+        <div class="tv-turnstile" id="tv-turnstile"></div>
         <button type="button" class="tv-go">See my yard with this turf</button>
         <p class="tv-msg" role="status" aria-live="polite"></p>
       </div>
@@ -346,6 +347,7 @@
       const problems = (st.photo ? [] : ["a yard photo"]).concat(need);
       if (problems.length) { msg.className = "tv-msg is-err"; msg.textContent = "Please add " + problems.join(", ") + "."; setOpen(st.photo ? 5 : 1, true); return; }
       const name = lead.name, email = lead.email;
+      if (window.turnstileReady && !window.turnstileToken) { msg.className = "tv-msg"; msg.textContent = "Verifying you are human. Give it a second, then press the button again."; return; }
       st.busy = true; $(".tv-go").disabled = true; msg.className = "tv-msg"; msg.textContent = "";
       const t0 = Date.now();
       if (matchMedia("(max-width: 900px)").matches) $(".tv-stage").scrollIntoView({ behavior: "smooth", block: "start" }); // on a phone the result sits below the form
@@ -373,6 +375,7 @@
         window.dispatchEvent(new CustomEvent("site:event", { detail: { event: "visualizer_render_error" } }));
         $(".tv-stage").innerHTML = `<div class="tv-empty"><p class="is-err">${esc(err.message)}</p></div>`;
       } finally {
+        window.turnstileToken = ""; try { if (window.turnstile && window.turnstileWidget != null) window.turnstile.reset(window.turnstileWidget); } catch (e) { /* widget will re-verify */ }
         clearInterval(timer); st.busy = false; $(".tv-go").disabled = false;
       }
     }
@@ -420,4 +423,30 @@
 
   window.TurfVisualizer = { mount };
   document.querySelectorAll("[data-turf-visualizer]").forEach(mount);
+})();
+
+/* Cloudflare Turnstile: bot check on the render request. Tokens are single use, so the widget resets after every render. */
+(function turnstileSetup() {
+  const SITEKEY = "0x4AAAAAAFURXqVONx9zPn6G";
+  window.turnstileToken = "";
+  function mount() {
+    const el = document.getElementById("tv-turnstile");
+    if (!el || !window.turnstile || el.dataset.ts) return;
+    el.dataset.ts = "1";
+    window.turnstileToken = "";
+    window.turnstileReady = true;
+    window.turnstileWidget = window.turnstile.render(el, {
+      sitekey: SITEKEY,
+      theme: "dark",
+      callback: t => { window.turnstileToken = t; },
+      "expired-callback": () => { window.turnstileToken = ""; },
+      "error-callback": () => { window.turnstileToken = ""; }
+    });
+  }
+  window.onTurnstileLoad = mount;
+  const sc = document.createElement("script");
+  sc.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad";
+  sc.async = true; sc.defer = true;
+  document.head.appendChild(sc);
+  new MutationObserver(mount).observe(document.documentElement, { childList: true, subtree: true });
 })();
