@@ -107,3 +107,7 @@ button.primary,button.primary:hover,.start,.start:hover{color:#0A0B0D;-webkit-te
 .tv-q-in{display:grid;gap:6px;color:#fff;font-weight:600}
 .tv-q-in input{min-height:48px;padding:0 12px;border:1px solid rgba(255,255,255,.4);border-radius:10px;background:#000;color:#fff;font:600 1rem Geist,system-ui,sans-serif}
 .tv-q-range{margin:0;font:800 clamp(1.5rem,5vw,2rem)/1.1 Archivo,Geist,sans-serif;color:#fff}
+
+/* v10d: beat the specificity of the widget stylesheet */
+.tv .tv-go,.tv .tv-go:hover,.tv .tv-go:focus-visible,.tv .tv-go:active,.tv .tv-go:disabled,
+.tv .tv-next,.tv .tv-next:hover,.tv .tv-next:focus-visible,.tv .tv-next:active{color:#0A0B0D!important;-webkit-text-fill-color:#0A0B0D!important;font-family:Geist,system-ui,Arial,sans-serif!important;font-weight:700!important;font-size:1rem!important;letter-spacing:0!important;text-transform:none!important}
