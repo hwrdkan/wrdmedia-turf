@@ -96,3 +96,14 @@ button[aria-pressed=true]{border-color:#FFFFFF;box-shadow:3px 3px 0 #D8473D}
 .tv-next,.tv-next:hover,.tv-next:focus-visible,.tv-next:active,
 button.primary,button.primary:hover,.start,.start:hover{color:#0A0B0D;-webkit-text-fill-color:#0A0B0D;font-family:Geist,system-ui,Arial,sans-serif;font-weight:700;font-size:1rem;letter-spacing:0;text-transform:none}
 .tv-go:disabled{opacity:.6;cursor:progress}
+
+/* v10c: price range panel */
+.tv-actions{display:flex;flex-wrap:wrap;gap:10px}
+.tv-price,.tv-q-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:#fff;color:#0A0B0D;-webkit-text-fill-color:#0A0B0D;border:2px solid #0A0B0D;border-radius:12px;box-shadow:4px 4px 0 #3F72D9;font-family:Geist,system-ui,Arial,sans-serif;font-weight:700;text-decoration:none}
+.tv-price:hover,.tv-q-cta:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #3F72D9}
+.tv-quote{margin-top:14px;padding:16px;border:1px solid rgba(255,255,255,.4);border-radius:12px;background:#0B0B0D;display:grid;gap:10px}
+.tv-quote[hidden]{display:none}
+.tv-quote h4{margin:0;font:800 1.125rem/1.2 Archivo,Geist,sans-serif;color:#fff}
+.tv-q-in{display:grid;gap:6px;color:#fff;font-weight:600}
+.tv-q-in input{min-height:48px;padding:0 12px;border:1px solid rgba(255,255,255,.4);border-radius:10px;background:#000;color:#fff;font:600 1rem Geist,system-ui,sans-serif}
+.tv-q-range{margin:0;font:800 clamp(1.5rem,5vw,2rem)/1.1 Archivo,Geist,sans-serif;color:#fff}

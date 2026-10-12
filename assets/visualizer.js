@@ -300,8 +300,10 @@
           <p class="tv-fine">${esc(result.report)} This is an AI concept of your photo, not a photo of a finished job. Final layout is set on site.</p>
           <div class="tv-actions">
             <a class="tv-dl" download="my-yard-${line.id}.jpg" href="${st.showLocked || result.swapped ? result.lockedUrl : result.rawUrl}">${icon.download} Save image</a>
-            <a class="tv-price" href="#" data-price>Save project plan</a>
+            <a class="tv-price" href="#" data-quote>Price this turf</a>
+            <a class="tv-dl tv-plan" href="#" data-price>Save project plan</a>
           </div>
+          <div class="tv-quote" hidden></div>
         </div>
         <div class="tv-product-slot">${slotHTML()}</div>`;
     }
@@ -317,6 +319,35 @@
         fig.onpointermove = move; fig.onpointerup = () => (fig.onpointermove = null);
       });
       if ($(".tv-lock input")) $(".tv-lock input").addEventListener("change", (e) => { st.showLocked = e.target.checked; $(".tv-stage").innerHTML = stageHTML(result); wireStage(result); });
+      const qbox = $(".tv-quote"), qbtn = $("[data-quote]");
+      const money = n => "$" + Math.round(n).toLocaleString("en-US");
+      function drawQuote() {
+        const line = lineOf(curId()), putt = P.PRESETS[st.preset].sqft ? P.footprint(st.preset, st.size).sqft : 0;
+        const yardOn = st.mode !== "putt";
+        const yard = yardOn ? Math.max(0, Math.min(20000, Number((qbox.querySelector("[data-sqft]") || {}).value || 600))) : 0;
+        const areas = [];
+        if (yardOn && yard) areas.push({ name: "Yard", use: line.uses.includes("pet") ? "pet" : "landscape", sqft: yard, lineId: curId() });
+        if (putt) areas.push({ name: "Putting green", use: "putting", sqft: putt, lineId: st.puttingId, removeGrass: false });
+        const est = window.TurfRules.estimate(C, { areas }, {});
+        qbox.querySelector("[data-out]").innerHTML = est.totalSqft
+          ? `<p class="tv-q-range">${money(est.low)} to ${money(est.high)}</p><p class="tv-fine">${est.totalSqft.toLocaleString("en-US")} sq ft${est.minimumApplied ? ", minimum job applied" : ""}. Installed planning range: materials, labor, base prep and grass removal.</p>`
+          : `<p class="tv-fine">Enter your yard size to see a range.</p>`;
+      }
+      qbtn.addEventListener("click", e => {
+        e.preventDefault();
+        if (!window.TurfRules) return;
+        if (!qbox.hidden) { qbox.hidden = true; return; }
+        const yardOn = st.mode !== "putt", putt = P.PRESETS[st.preset].sqft ? P.footprint(st.preset, st.size).sqft : 0;
+        qbox.innerHTML = `<h4>Rough price range</h4>` +
+          (yardOn ? `<label class="tv-q-in">Yard size (sq ft)<input type="number" inputmode="numeric" min="50" max="20000" step="50" value="600" data-sqft></label>` : "") +
+          (putt ? `<p class="tv-fine">Putting green: ${putt} sq ft (${esc(P.PRESETS[st.preset].label.toLowerCase())}).</p>` : "") +
+          `<div data-out aria-live="polite"></div>
+          <p class="tv-fine">A planning range, not a quote. Final price comes after a site visit and depends on drainage, base, access and removal.</p>
+          <a class="tv-q-cta" href="https://wrdmedia.com/#book">Get an exact quote</a>`;
+        qbox.hidden = false;
+        const inp = qbox.querySelector("[data-sqft]"); if (inp) inp.addEventListener("input", drawQuote);
+        drawQuote();
+      });
       $("[data-price]").addEventListener("click", (e) => {
         e.preventDefault();
         const plan={format:"turf-studio",version:1,lineId:curId(),mode:st.mode,area:st.area,preset:st.preset,size:st.size,puttingLineId:st.puttingId,border:st.border};
