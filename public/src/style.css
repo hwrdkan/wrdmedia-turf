@@ -90,3 +90,9 @@ button[aria-pressed=true]{border-color:#FFFFFF;box-shadow:3px 3px 0 #D8473D}
 .acc[open]{border-color:#FFFFFF;box-shadow:4px 4px 0 #3F72D9}
 .acc[open] .acc__n{background:#FFFFFF;color:#0A0B0D}
 .field output,#status{color:#FFFFFF}
+
+/* v10b: primary buttons always dark text (Continue was white on white), site button font */
+.tv-go,.tv-go:hover,.tv-go:focus-visible,.tv-go:active,.tv-go:disabled,
+.tv-next,.tv-next:hover,.tv-next:focus-visible,.tv-next:active,
+button.primary,button.primary:hover,.start,.start:hover{color:#0A0B0D;-webkit-text-fill-color:#0A0B0D;font-family:Geist,system-ui,Arial,sans-serif;font-weight:700;font-size:1rem;letter-spacing:0;text-transform:none}
+.tv-go:disabled{opacity:.6;cursor:progress}
